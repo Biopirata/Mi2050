@@ -23,6 +23,8 @@
 	"Importación de energía limpia [NO USADA]"
 ],
 
+"labels":{"supply":"SUPPLY FROM CFG","demand":"DEMAND LABEL"},
+
 "supply":{	
 	"biocombustibles":{	
 		"levels":[
