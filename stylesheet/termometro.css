@@ -1,0 +1,220 @@
+@CHARSET "UTF-8";
+
+
+* { 
+	outline: none;
+}
+
+div.meter{
+	border-radius:6px;
+	border:1px solid rgba(204,227,158,0.7);
+	background-color: none;
+	background-image: 
+		url("2050/meter/termometro.png"),
+		url("2050/meter/fondo_verde.png")	
+		;
+		
+	background-position: 
+		top left,
+		top right
+		; 
+	box-shadow: 2px 2px 4px gray;
+	left: 15px;
+	top:15px;
+}
+
+div.meter div.filler{
+	border: 1px solid #cc0000;
+	background-color: none; 
+	
+	background-image: 
+		url("2050/meter/termometro.png"),
+		url("2050/meter/fondo_rojo.png")
+		;
+	background-repeat:
+		repeat-x;
+	
+	  background-position: 
+    	top left,
+    	center center
+    	;
+	
+	border-radius:6px 0px 0px 6px;;
+	
+	border-top-right-radius: 0px;
+	border-bottom: 0px;
+	top: -1px;
+	left: -1px;
+	height: 22px;
+	
+	border-radius: inherit;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-right: 0px solid #C00;
+}
+
+div.meter div.filler.overflow{
+	border: 1px solid #cc0000;
+	border-radius: inherit;
+}
+
+
+div.meter div.mark-bg {
+    background: url("2050/meter/markBG.png") no-repeat scroll right center transparent;
+    display: block;
+    width: 57px;
+    height: 57px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    left: -28px;
+    padding-top: 29px;
+    box-sizing: border-box;
+    z-index: 1002;
+}
+
+div.meter div.mark span {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    color: #FFF;
+}
+
+
+div.meter div.mark span:before {
+    content: "CO₂";
+	font-size: 11px;
+	display: block;
+	position: absolute;
+	top: 9px;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+}
+
+div.meter div.mark span:after {
+    content: "%";
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+
+div.meter div.targetMark {
+    overflow: visible;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 33.33%;
+    z-index: 1000;
+}
+
+div.meter div.targetMark-bg {
+    background-image: url("2050/meter/metaBG.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 150px;
+    top: -1px;
+    height: 24px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+    position: absolute;
+    line-height: 21px;
+    margin-left: -112px;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+div.meter div.targetMark-bg:after{
+	content: 'Meta 50%';
+	text-shadow: 0px 0px 1px #333;
+	font-family: arial;
+	margin-right: 10px;
+}
+
+
+
+div#pie_metas {
+    width: 140px;
+    height: 140px;
+    top: -5px;
+    float: right;
+    left: auto;
+    right: 15px;
+}
+
+
+button.send-pathway-btn {
+	position: absolute;
+	top: 50px;
+	right: 185px;
+	box-shadow: 1px 2px 3px #808080;
+	cursor: pointer;
+	border: 1px solid rgba(150, 150, 137, 0.39);
+	border-radius: 4px;
+	padding: 2px 2px 4px 2px;
+	color: rgb(62, 62, 62);
+text-shadow: 0px 1px 0px #aaa;	
+		
+		
+	background: -webkit-linear-gradient(top, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+	background: -o-linear-gradient(top, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+	background: -ms-linear-gradient(top, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+	background: -moz-linear-gradient(top, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+	background: linear-gradient(to bottom, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+	
+}
+
+
+button.send-pathway-btn:hover{
+background: -webkit-linear-gradient(bottom, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+background: -o-linear-gradient(bottom, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+background: -ms-linear-gradient(bottom, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+background: -moz-linear-gradient(bottom, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+background: linear-gradient(to top, rgba(184, 194, 194, 0.49) 0%, rgba(121, 131, 131, 0.49) 64%, rgba(89, 97, 97, 0.49) 100%);
+
+}
+
+button.send-pathway-btn:after{
+	content: url("2050/meter/sendBG.png");
+	text-align: right;
+	float: right;
+	vertical-align: middle;
+	margin: 2px 0px 0px;
+	margin-left: 5px;
+}
+
+
+
+div#pie_metas {
+    width: 140px;
+    height: 140px;
+    top: -5px;
+    float: right;
+    left: auto;
+    right: 15px;
+    background:none;
+    background-image: url("2050/meter/fondoPie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 14px 10px; 
+}
+
+div#pie_metas:after {
+	content: url("2050/meter/upPie.png");
+	position: absolute;
+	left: 14px;
+	top: 9px;
+			
+			
+			
+}
+
+
+
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container {background-color:#333; border:8px solid #444; padding:12px;}

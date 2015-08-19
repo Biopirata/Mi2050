@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+
+.controls > div.closed {
+	width: 35%;
+	
+}
+.controls > div.closed > div {
+	margin-right: 2px;
+	
+}
+.controls > div.open {
+	width: 51%;
+}
+
+
+@-webkit-keyframes animetedSmoke{
+	from	{ background-position: 0 center;	}
+	to	{	background-position: -8800px center; }
+}
+
+@-moz-keyframes animetedSmoke{
+	from	{ background-position:  center;	}
+	to	{	background-position: -8800px center; }
+}
+
+@keyframes animetedSmoke{
+	from	{ background-position: 0 center;	}
+	to	{	background-position: -8800px center; }
+}
+
+
+
+
+
+
+#simulation.minified{
+	max-height: 200px;
+	margin-top:40px;
+	-webkit-transition: max-height 0.5s, margin-top 0.5s; 
+	-moz-transition:	max-height 0.5s, margin-top 0.5s; 
+	transition:			max-height 0.5s, margin-top 0.5s;
+}
+
+
+.controls > div.energy_balance .energy_chart.maxified{
+	height: 200px;
+	-webkit-transition: height 0.5s; 
+	-moz-transition:		height 0.5s; 
+	transition:					height 0.5s;
+}

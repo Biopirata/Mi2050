@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE labels [
+	<!ELEMENT labels (label+)>
+	 <!ELEMENT label (#PCDATA)>
+	 <!ATTLIST label id ID #REQUIRED>
+]>
+<labels>
+
+<label id="btn-submit-path-label"><![CDATA[
+	Comparte tu ruta 
+]]></label>
+
+<label id="warning-energy-balance-on-share"><![CDATA[
+	<b>Tu producción de energia electrica y de combustibles es menor a tu demanda</b><br>
+	Verificar el indicador de balance energético antes de compartir tu ruta.
+	 
+]]></label>
+
+
+<label id="warning-energy-balance-on-share-exit"><![CDATA[
+	Regresar a cambiar mi ruta
+]]></label>
+
+<label id="warning-energy-balance-window-title"><![CDATA[
+	Balance de oferta y demanda energética incorrecto
+]]></label>
+
+
+
+<label id="share-path-dialog-title"><![CDATA[
+	Compartir en redes sociales
+]]></label>
+
+
+<label id="share-path-dialog-description"><![CDATA[
+	Bien hecho, ahora puedes compartir con tus amigos y familiares tu visión de como 
+	debe cambiar México para lograr la meta.
+]]></label>
+
+<label id="share-path-dialog-link-title"><![CDATA[
+	El texto que se utilizara, si el api lo permite a agregar dentro de la publicación
+]]></label>
+
+<label id="share-path-dialog-link-summary"><![CDATA[
+	Una descripcion de lo que se quiere compartir. Es el texto que aparece adjunto al link en la publicación
+]]></label>
+
+<label id="share-path-dialog-link-text"><![CDATA[
+	btn
+]]></label>
+
+
+
+<label id="energy-balance-pane-title"><![CDATA[
+	Balance energético
+	
+]]></label>
+
+
+<label id="energy-balance-pane-icon-desciption-title"><![CDATA[
+	¿Cuán balanceado es tu ruta?
+]]></label>
+
+<label id="energy-balance-pane-icon-desciption-icon-under"><![CDATA[
+	La demanda excede la oferta
+]]></label>
+
+
+<label id="energy-balance-pane-icon-desciption-icon-balanced"><![CDATA[
+	Tienen un mundo en balance
+]]></label>
+
+
+<label id="energy-balance-pane-icon-desciption-icon-upper"><![CDATA[
+	La oferta excede demasiado a la demanda. Se desperdicia energia
+]]></label>
+
+
+
+
+
+<label id="info-dialog-sel-value-label"><![CDATA[
+			Valor seleccionado : 
+]]></label>
+
+
+
+
+<!-- 
+		*******************************************
+		Grafica metas energeticas
+		*******************************************
+-->
+<label id="meta-energ-char-label"><![CDATA[
+			Metas 2 energias limpias cambio
+	]]></label>
+
+<label id="meta-energ-meta-nolimpia"><![CDATA[
+			Meta en el porcentage de energía generada por combustibles fosiles para el 2050 
+	]]></label>
+
+<label id="meta-energ-meta-limpia"><![CDATA[
+			Meta en el porcentage de energía generada por tecnoligías renovables para el 2050
+	]]></label>
+
+<label id="meta-energ-actual-nolimpia"><![CDATA[
+		Porcentage de energia generará por combustibles fósiles para el 2050 según tu configuración 
+
+	]]></label>
+
+<label id="meta-energ-actual-limpia"><![CDATA[
+		Porcentage de energia generará por tecnologías renobables para el 2050 según tu configuración
+	]]></label>
+
+<label id="meta-energ-info"><![CDATA[
+			Un parrafo explicativo de la iniciativa del gobierno federal sobre el uso de energias renovables o limpiar
+	en porcentage con respecto ala cantidad total.
+	
+	]]></label>
+
+
+
+
+
+
+
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	<label id="biocombustibles-label"> 
+		<![CDATA[
+		Bioenergía
+	]]></label>	
+
+	<label id="biocombustibles-info-level-1">
+		<![CDATA[
+					Descipción para le nivel <b>1</b> de la planca biocombustibles
+		
+	]]></label>
+	<label id="biocombustibles-info-level-2">
+		<![CDATA[
+					Descipción para le nivel <b>2</b> de la planca biocombustibles
+		
+	]]></label>
+	
+	<label id="biocombustibles-info-level-3">
+		<![CDATA[
+					Descipción para le nivel <b>3</b> de la planca biocombustibles
+		
+	]]></label>
+	<label id="biocombustibles-info-level-4"><![CDATA[
+		Descipción para le nivel <b>4</b> de la planca biocombustibles
+	]]></label>
+	
+	<label id="biocombustibles-description-icon">
+		<![CDATA[
+					assets/icons/bioC.png	
+		]]></label>
+	<label id="biocombustibles-description">
+		<![CDATA[
+		Un <b>biocarburante</b> o <b>biocombustible</b> es una mezcla de <a href="/wiki/Hidrocarburo" title="Hidrocarburo">hidrocarburos</a> que se utiliza como <a href="/wiki/Combustible" title="Combustible">combustible</a> en los motores de combustión interna. Deriva de la <a href="/wiki/Biomasa" title="Biomasa">biomasa</a>, materia orgánica originada en un proceso biológico, espontáneo o provocado, utilizable como fuente de energía.</p>
+<p>Para muchos autores,<sup id="cite_ref-mapa_1-0" class="reference"><a href="#cite_note-mapa-1"><span class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup> lo correcto para referirse a este tipo de combustibles es hablar de agrocombustibles, el prefijo "bio-" se utiliza en toda la UE para referirse a los productos agrícolas en cuya producción no intervienen productos de síntesis. La palabra biocombustible, por lo tanto, se presta a confusión y dota al término de unas connotaciones positivas de las que carece.</p>
+<p>Para la obtención de los biocarburantes se pueden utilizar especies de uso agrícola tales como el <a href="/wiki/Zea_mays" title="Zea mays">maíz</a> o la <a href="/wiki/Manihot_esculenta" title="Manihot esculenta">mandioca</a>, ricas en <a href="/wiki/Carbohidrato" title="Carbohidrato" class="mw-redirect">carbohidratos</a>, o plantas <a href="/wiki/Oleaginosa" title="Oleaginosa" class="mw-redirect">oleaginosas</a> como la <a href="/wiki/Glycine_max" title="Glycine max">soja</a>, <a href="/wiki/Helianthus_annuus" title="Helianthus annuus">girasol</a> y palmas. También se pueden emplear especies forestales como el <a href="/wiki/Eucalyptus" title="Eucalyptus">eucalipto</a> y los <a href="/wiki/Pinus" title="Pinus">pinos</a>.</p>
+<p>Al utilizar estos materiales se reduce considerablemente el CO2 que es enviado a la atmósfera terrestre ya que estos materiales van absorbiendo el CO2 a medida que se van desarrollando, mientras que emiten una cantidad similar que los carburantes convencionales en el momento de la combustión.</p>
+<p>En Europa, Argentina y Estados Unidos ha surgido diversa normativa que exige a los proveedores mezclar biocombustibles hasta un nivel determinado. Generalmente los biocombustibles se mezclan con otros combustibles en cantidades que varian del 5 al 10%.</p>
+<p>Los combustibles de origen biológico pueden sustituir parte del consumo en <a href="/wiki/Combustibles_f%C3%B3siles" title="Combustibles fósiles" class="mw-redirect">combustibles fósiles</a> tradicionales, como el <a href="/wiki/Petr%C3%B3leo" title="Petróleo">petróleo</a> o el <a href="/wiki/Carb%C3%B3n" title="Carbón">carbón</a>.</p>
+<p>Los biocarburantes más usados y desarrollados son el <a href="/wiki/Bioetanol" title="Bioetanol" class="mw-redirect">bioetanol</a> y el <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>.</p>
+<ul>
+<li>El <a href="/wiki/Etanol_(combustible)#Bioetanol" title="Etanol (combustible)">bioetanol</a>, también llamado <i>etanol de biomasa</i>, por <a href="/wiki/Fermentaci%C3%B3n_alcoh%C3%B3lica" title="Fermentación alcohólica">fermentación alcohólica</a> de <a href="/wiki/Az%C3%BAcares" title="Azúcares">azúcares</a> de diversas plantas como la <a href="/wiki/Saccharum_officinarum" title="Saccharum officinarum">caña de azúcar</a>, <a href="/wiki/Beta_vulgaris_subsp._vulgaris_var._altissima" title="Beta vulgaris subsp. vulgaris var. altissima">remolacha</a> o <a href="/wiki/Cereal" title="Cereal">cereales</a> . En 2006, <a href="/wiki/Estados_Unidos" title="Estados Unidos">Estados Unidos</a> fue el principal productor de bioetanol (36% de la producción mundial), <a href="/wiki/Brasil" title="Brasil">Brasil</a> representa el 33,3%, <a href="/wiki/China" title="China" class="mw-redirect">China</a> el 7,5%, la <a href="/wiki/India" title="India">India</a> el 3,7%, <a href="/wiki/Francia" title="Francia">Francia</a> el 1,9% y <a href="/wiki/Alemania" title="Alemania">Alemania</a> el 1,5%. La producción total de 2006 alcanzó 55 mil millones de <a href="/wiki/Litros" title="Litros" class="mw-redirect">litros</a>.<sup id="cite_ref-RFA1E_2-0" class="reference"><a href="#cite_note-RFA1E-2"><span class="corchete-llamada">[</span>2<span class="corchete-llamada">]</span></a></sup></li>
+<li>El <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>, se fabrica a partir de aceites vegetales, que pueden ser ya usados o sin usar.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="corchete-llamada">[</span>3<span class="corchete-llamada">]</span></a></sup> En este último caso se suele usar <a href="/wiki/Brassica_napus" title="Brassica napus">colza</a>, <a href="/wiki/Brassica_napus" title="Brassica napus">canola</a>, <a href="/wiki/Glycine_max" title="Glycine max">soja</a> o <a href="/wiki/Jatropha_curcas" title="Jatropha curcas">jatrofa</a>, los cuales son cultivados para este propósito. El principal productor de <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a> en el mundo es <a href="/wiki/Alemania" title="Alemania">Alemania</a>, que concentra el 63% de la producción. Le sigue <a href="/wiki/Francia" title="Francia">Francia</a> con el 17%, <a href="/wiki/Estados_Unidos" title="Estados Unidos">Estados Unidos</a> con el 10%, <a href="/wiki/Italia" title="Italia">Italia</a> con el 7% y <a href="/wiki/Austria" title="Austria">Austria</a> con el 3%.</li>
+</ul>
+<p>Los biocarburantes más usados y desarrollados son el <a href="/wiki/Bioetanol" title="Bioetanol" class="mw-redirect">bioetanol</a> y el <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>.</p>
+
+	]]></label>
+
+
+	
+
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	<label id="eolica-label"><![CDATA[
+				Eólica
+	]]></label>
+	<label id="eolica-info-level-2"><![CDATA[
+				eolica-info-level-2
+	]]></label>
+	<label id="eolica-info-level-3"><![CDATA[
+				eolica-info-level-3
+	]]></label>
+	<label id="eolica-info-level-4"><![CDATA[
+				eolica-info-level-4
+	]]></label>
+	<label id="eolica-info-level-1"><![CDATA[
+				eolica-info-level-1
+	]]></label>
+	<label id="eolica-description"><![CDATA[
+				eolica-description
+	]]></label>
+	
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<label id="nuclear-label"><![CDATA[
+				Nuclear
+	]]></label>
+	<label id="nuclear-info-level-2"><![CDATA[
+				nuclear-info-level-2
+	]]></label>
+	<label id="nuclear-info-level-3"><![CDATA[
+				nuclear-info-level-3
+	]]></label>
+	<label id="nuclear-info-level-4"><![CDATA[
+				nuclear-info-level-4
+	]]></label>
+	<label id="nuclear-info-level-1"><![CDATA[
+				nuclear-info-level-1
+	]]></label>
+	<label id="nuclear-description"><![CDATA[
+				nuclear-description
+	]]></label>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	
+	
+	
+	<label id="solar-label"><![CDATA[
+		Solar
+	]]></label>
+	<label id="solar-info-level-2"><![CDATA[
+		solar-info-level-2
+	]]></label>
+	<label id="solar-info-level-3"><![CDATA[
+		solar-info-level-3
+	]]></label>
+	<label id="solar-info-level-4"><![CDATA[
+		solar-info-level-4
+	]]></label>
+	<label id="solar-info-level-1"><![CDATA[
+		solar-info-level-1
+	]]></label>
+	<label id="solar-description"><![CDATA[
+		Incluyen pequeña y gran escala, tanto fotovoltáica como termosolar
+	]]></label>
+	
+	
+	
+	
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	
+	
+	
+	<label id="forestal-label"><![CDATA[
+		Forestal
+	]]></label>
+	<label id="forestal-info-level-2"><![CDATA[
+		forestal-info-level-2
+	]]></label>
+	<label id="forestal-info-level-3"><![CDATA[
+		forestal-info-level-3
+	]]></label>
+	<label id="forestal-info-level-4"><![CDATA[
+		forestal-info-level-4
+	]]></label>
+	<label id="forestal-info-level-1"><![CDATA[
+		forestal-info-level-1
+	]]></label>
+	<label id="forestal-description"><![CDATA[
+		Incluye deforestación evitada, plantaciones y manejo forestal
+	]]></label>
+	
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	
+	<label id="hidraulica-label"><![CDATA[
+		Otras renovables
+	]]></label>
+	<label id="hidraulica-info-level-2"><![CDATA[
+		hidraulica-info-level-2
+	]]></label>
+	<label id="hidraulica-info-level-3"><![CDATA[
+		hidraulica-info-level-3
+	]]></label>
+	<label id="hidraulica-info-level-4"><![CDATA[
+		hidraulica-info-level-4
+	]]></label>
+	<label id="hidraulica-info-level-1"><![CDATA[
+		hidraulica-info-level-1
+	]]></label>
+	<label id="hidraulica-description"><![CDATA[
+		Incluye hidráulica, oceánica y geotérmica
+	]]></label>
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	<label id="ccs-label"><![CDATA[
+		Captura de carbono
+	]]></label>
+	<label id="ccs-info-level-2"><![CDATA[
+		ccs-info-level-2
+	]]></label>
+	<label id="ccs-info-level-3"><![CDATA[
+		ccs-info-level-3
+	]]></label>
+	<label id="ccs-info-level-4"><![CDATA[
+		ccs-info-level-4
+	]]></label>
+	<label id="ccs-info-level-1"><![CDATA[
+		ccs-info-level-1
+	]]></label>
+	<label id="ccs-description"><![CDATA[
+		ccs-description
+	]]></label>
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	<label id="iluminacion-label"><![CDATA[
+		Iluminación
+	]]></label>
+	<label id="iluminacion-info-level-2"><![CDATA[
+		iluminacion-info-level-2
+	]]></label>
+	<label id="iluminacion-info-level-3"><![CDATA[
+		iluminacion-info-level-3
+	]]></label>
+	<label id="iluminacion-info-level-4"><![CDATA[
+		iluminacion-info-level-4
+	]]></label>
+	<label id="iluminacion-info-level-1"><![CDATA[
+		iluminacion-info-level-1
+	]]></label>
+	<label id="iluminacion-description"><![CDATA[
+		Incluye iluminación, electrodomésticos y cocción tanto residencial como comercial y público.
+	]]></label>
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	<label id="distribucion_modal-label"><![CDATA[
+		Modos de transporte
+	]]></label>
+	<label id="distribucion_modal-info-level-2"><![CDATA[
+		distribucion_modal-info-level-2
+	]]></label>
+	<label id="distribucion_modal-info-level-3"><![CDATA[
+		distribucion_modal-info-level-3
+	]]></label>
+	<label id="distribucion_modal-info-level-4"><![CDATA[
+		distribucion_modal-info-level-4
+	]]></label>
+	<label id="distribucion_modal-info-level-1"><![CDATA[
+		distribucion_modal-info-level-1
+	]]></label>
+	<label id="distribucion_modal-description"><![CDATA[
+		distribucion_modal-description
+	]]></label>
+
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	<label id="demanda_transporte-label"><![CDATA[
+		Demanda de transporte
+	]]></label>
+	<label id="demanda_transporte-info-level-2"><![CDATA[
+		demanda_transporte-info-level-2
+	]]></label>
+	<label id="demanda_transporte-info-level-3"><![CDATA[
+		demanda_transporte-info-level-3
+	]]></label>
+	<label id="demanda_transporte-info-level-4"><![CDATA[
+		demanda_transporte-info-level-4
+	]]></label>
+	<label id="demanda_transporte-info-level-1"><![CDATA[
+		demanda_transporte-info-level-1
+	]]></label>
+	<label id="demanda_transporte-description"><![CDATA[
+		demanda_transporte-description
+	]]></label>
+
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	
+	<label id="escenarios_tec-label"><![CDATA[
+		Eficiencia del transporte
+	]]></label>
+	<label id="escenarios_tec-info-level-2"><![CDATA[
+		escenarios_tec-info-level-2
+	]]></label>
+	<label id="escenarios_tec-info-level-3"><![CDATA[
+		escenarios_tec-info-level-3
+	]]></label>
+	<label id="escenarios_tec-info-level-4"><![CDATA[
+		escenarios_tec-info-level-4
+	]]></label>
+	<label id="escenarios_tec-info-level-1"><![CDATA[
+		escenarios_tec-info-level-1
+	]]></label>
+	<label id="escenarios_tec-description"><![CDATA[
+		escenarios_tec-description
+	]]></label>
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	
+	<label id="climatizacion-label"><![CDATA[
+		Eficiencia en el hogar 
+	]]></label>
+	<label id="climatizacion-info-level-2"><![CDATA[
+		climatizacion-info-level-2
+	]]></label>
+	<label id="climatizacion-info-level-3"><![CDATA[
+		climatizacion-info-level-3
+	]]></label>
+	<label id="climatizacion-info-level-4"><![CDATA[
+		climatizacion-info-level-4
+	]]></label>
+	<label id="climatizacion-info-level-1"><![CDATA[
+		climatizacion-info-level-1
+	]]></label>
+	<label id="climatizacion-description"><![CDATA[
+		climatizacion-description
+	]]></label>
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	<label id="eficiencia_ind-label"><![CDATA[
+		Eficiencia en la industria
+	]]></label>
+	<label id="eficiencia_ind-info-level-2"><![CDATA[
+		eficiencia_ind-info-level-2
+	]]></label>
+	<label id="eficiencia_ind-info-level-3"><![CDATA[
+		eficiencia_ind-info-level-3
+	]]></label>
+	<label id="eficiencia_ind-info-level-4"><![CDATA[
+		eficiencia_ind-info-level-4
+	]]></label>
+	<label id="eficiencia_ind-info-level-1"><![CDATA[
+		eficiencia_ind-info-level-1
+	]]></label>
+	<label id="eficiencia_ind-description"><![CDATA[
+		eficiencia_ind-description
+	]]></label>
+	
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+	<label id="petrolera-label"><![CDATA[
+		Producción Fosil
+	]]></label>
+	<label id="petrolera-info-level-2"><![CDATA[
+		petrolera-info-level-2
+	]]></label>
+	<label id="petrolera-info-level-3"><![CDATA[
+		petrolera-info-level-3
+	]]></label>
+	<label id="petrolera-info-level-4"><![CDATA[
+		petrolera-info-level-4
+	]]></label>
+	<label id="petrolera-info-level-1"><![CDATA[
+		petrolera-info-level-1
+	]]></label>
+	<label id="petrolera-description"><![CDATA[
+		petrolera-description
+	]]></label>
+	
+	<!-- 
+		*******************************************
+		Palanca 01 level info & Descripción
+		*******************************************
+		-->
+
+	<label id="SUPPLY FROM CFG"><![CDATA[
+				Oferta
+	]]></label>
+	<label id="DEMAND LABEL"><![CDATA[
+				Demanda
+	]]></label>
+</labels>

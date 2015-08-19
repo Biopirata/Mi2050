@@ -1,0 +1,284 @@
+.controls > div.supply-controls,
+.controls > div.demand-controls{
+	padding-top: 5px;
+}
+
+.controls > div.supply-controls-label,
+.controls > div.supply-controls {
+	background: none;
+	background-image: url("2050/controls/fondoSupply.png");
+}
+
+.controls > div.demand-controls-label,
+.controls > div.demand-controls {
+	background: linear-gradient(to bottom, rgba(204, 214, 219, 0.38) 0%,rgba(101,196,192,0.5) 50%,rgba(101,196,192,0.5) 51%,rgba(101,196,192,0.5) 100%);
+	background: none;
+	background-image: url("2050/controls/fondoDemand.png");
+	background-position: right;  
+}
+
+.controls > div.supply-controls-label{
+	width: 7%;
+	position:relative;
+}
+
+.controls > div.demand-controls-label{
+	width: 7%;
+	position:relative;
+	background-position: right;
+}
+
+
+
+.twentyfive-slider-container {
+	width: 10.5%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 10px 0px 0px;
+	margin: 0px 4px 0px 0px;
+}
+
+.twentyfive-slider-container .ui-slider-range{
+	
+	display:block;
+	width: 6px;
+	border: 0 !important;
+	left:50%;
+	margin-left: -3px;
+	background: rgba(252, 247, 243, 0.49);
+}
+
+
+.controls > div.energy_balance{
+	//width:90%;
+	display:block;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+
+}
+
+
+.controls > div.energy_balance div.open_btn{
+	display: block;
+	height: 28px;
+	padding-top: 5px;
+	padding-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	cursor: pointer;
+	background: url("2050/meter/balanceEnergeticoBG.png") no-repeat scroll 0% 0% transparent;
+	box-sizing: border-box;
+	color: #5d5d5d;
+	
+}
+
+para-gaurdar-el{
+	/*
+	background: rgb(109,151,199); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45)  100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,151,199,1)), color-stop(25%,rgba(22,122,158,1)), color-stop(100%,rgba(46,112,199,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45)  100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45)  100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45)  100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45)  100%); /* W3C */
+	background: linear-gradient(to bottom, rgba(109, 151, 199, 0.74) 0%,rgba(22, 122, 158, 0.46) 25%,rgba(46, 112, 199, 0.45) 100%);
+	filter:		progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-8 */	
+	*/
+}
+
+.controls > div.energy_balance .energy_balace_state{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius:50%;
+	background-color: green;
+	background-image: url("2050/controls/energy_balance/thunder.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin: 1px 10px 1px 10px;		
+	
+}
+
+
+.controls > div.energy_balance .energy_balace_state.under{
+	background-color: #dd0000;		
+}
+.controls > div.energy_balance .energy_balace_state.balanced{
+	background-color: #007700;
+	background-image: url("2050/controls/energy_balance/balanced.png");
+}
+.controls > div.energy_balance .energy_balace_state.upper{
+	background-color: #5555dd;		
+}
+
+
+.controls > div.energy_balance .energy_chart{
+	width: 100%;
+	height: 0px;
+	overflow : hidden;
+	-webkit-transition:	height 0.5s; 
+	-moz-transition:	height 0.5s; 
+	transition:			height 0.5s;
+	
+	background: -webkit-linear-gradient(top, rgba(237, 250, 253, 0.91) 0%, rgba(215, 247, 255, 0.7) 92%, rgba(213, 247, 255, 0.68) 100%);
+	background: -o-linear-gradient(top, rgba(237, 250, 253, 0.91) 0%, rgba(215, 247, 255, 0.7) 92%, rgba(213, 247, 255, 0.68) 100%);
+	background: -ms-linear-gradient(top, rgba(237, 250, 253, 0.91) 0%, rgba(215, 247, 255, 0.7) 92%, rgba(213, 247, 255, 0.68) 100%);
+	background: -moz-linear-gradient(top, rgba(237, 250, 253, 0.91) 0%, rgba(215, 247, 255, 0.7) 92%, rgba(213, 247, 255, 0.68) 100%);
+	background: linear-gradient(to bottom, rgba(237, 250, 253, 0.91) 0%, rgba(215, 247, 255, 0.7) 92%, rgba(213, 247, 255, 0.68) 100%);
+	
+	box-shadow: inset 0px -4px 2px -4px #5d5d5d;	
+}
+
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions,
+.controls > div.energy_balance .energy_chart .chart-content{
+		width: 60%;
+		height: 180px;;
+		overflow: hidden;	
+		display: inline-block;
+}
+
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions{
+	width: 39%;
+	color: #5D5D5D;
+}
+
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions > h2{
+	font-size: 15px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions dl{
+	text-align: left;
+}
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions dl > dt,
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions dl > dd{
+	display: inline-block;
+	float: left;
+	width: 10%;
+	margin: 0px;
+	min-width: 42px;
+	font-size: 12px;
+}
+
+
+.controls > div.energy_balance .energy_chart .energy_balance_icons_descriptions dl > dd {
+	width: 86%;
+	margin-bottom: 10px;
+}
+
+.controls > div.demand-controls-label > span {
+    right: -60px;
+    position: absolute;
+    top: 52px;
+    height: 67px;
+    width: 170px;
+    display: inline-block;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    transform: rotate(90deg);
+ 
+}
+
+.controls > div.supply-controls-label > span {
+    left: -50px;
+    position: absolute;
+    top: 52px;
+    height: 67px;
+    width: 170px;
+    display: inline-block;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    transform: rotate(270deg);
+   
+}
+
+
+.controls > div.supply-controls-label > span,
+.controls > div.demand-controls-label > span {
+   text-shadow: 1px 1px 2px #333;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.twentyfive-slider-container .label {
+    font-size: 8px;
+    color: #444;
+    font-weight: bold;
+    line-height: 12px;
+    vertical-align: top;
+}
+
+.twentyfive-slider-container{
+	background: none;
+	background-image: url("2050/controls/sliderBG.png");
+	background-repeat: repeat-x;
+	border-radius: 8px; 
+}
+
+.twentyfive-slider-container .ui-slider {
+    width: 10px;
+    overflow: visible;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 0px;
+    border-radius: 6px;
+
+    background: none;
+    background: rgba(255,255,255,0.1);
+    box-shadow: inset 0px 0px 3px #222;
+
+    box-sizing: border-box;
+}
+
+
+.info-pane {
+    position: absolute;
+    top: auto;
+    bottom: 2px;
+    width: 100%;
+	
+	border-bottom: 1px solid #eff9f9;
+	border-top: 1px solid rgba(103,105,105,0.5);
+	
+	box-shadow: 0px 1px 1px rgba(50,50,50,0.5);		
+	
+	background: -webkit-linear-gradient(top, rgba(121, 124, 124, 0.73) 0%, rgba(178, 186, 186, 0.87) 42%, rgba(206, 226, 223, 0.93) 85%, rgba(210, 230, 231, 0.93) 100%);
+	background: -o-linear-gradient(top, rgba(121, 124, 124, 0.73) 0%, rgba(178, 186, 186, 0.87) 42%, rgba(206, 226, 223, 0.93) 85%, rgba(210, 230, 231, 0.93) 100%);
+	background: -ms-linear-gradient(top, rgba(121, 124, 124, 0.73) 0%, rgba(178, 186, 186, 0.87) 42%, rgba(206, 226, 223, 0.93) 85%, rgba(210, 230, 231, 0.93) 100%);
+	background: -moz-linear-gradient(top, rgba(121, 124, 124, 0.73) 0%, rgba(178, 186, 186, 0.87) 42%, rgba(206, 226, 223, 0.93) 85%, rgba(210, 230, 231, 0.93) 100%);
+	background: linear-gradient(to bottom, rgba(121, 124, 124, 0.73) 0%, rgba(178, 186, 186, 0.87) 42%, rgba(206, 226, 223, 0.93) 85%, rgba(210, 230, 231, 0.93) 100%);
+			
+}
+
+
+
+.level-description {
+	border-radius: 5px;
+	border:none;
+	border: 1px solid #d4bd9c;
+	
+	color:#5d5d5d;
+	background: -webkit-linear-gradient(top, rgb(252, 246, 238) 0%, rgb(245, 220, 183) 100%);
+background: -o-linear-gradient(top, rgb(252, 246, 238) 0%, rgb(245, 220, 183) 100%);
+background: -ms-linear-gradient(top, rgb(252, 246, 238) 0%, rgb(245, 220, 183) 100%);
+background: -moz-linear-gradient(top, rgb(252, 246, 238) 0%, rgb(245, 220, 183) 100%);
+background: linear-gradient(to bottom, rgb(252, 246, 238) 0%, rgb(245, 220, 183) 100%);
+
+}

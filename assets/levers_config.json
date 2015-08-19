@@ -1,0 +1,182 @@
+{
+"DOCUMENTACION" : [
+		"CREAR DOCUMENTACION DE LA ESTRUCTURA DE ESTE DOCUMENTO JSON,",
+		"agregar valores por omision leidos desde aquí ------------------------------------- ",
+		""
+	],
+
+"url_model":"getPathway.php",
+"default_pathway" : "1111111111111111111111111111111111111111111111111111111111111",
+
+
+"ghg_reduction_gol_percentage" : 50,
+
+
+
+"max_energy_balance_overdemmand_percentage" : 30,
+"clean_energy_meta" : 30,
+"clean_energy_search_labels" : [
+	"Energía nuclear",
+	"Eólica (tierra y costa)",
+	"Energía hidroeléctrica",
+	"Wave",
+	"Tidal Stream",
+	"Geotérmica",
+	"Paneles solares fotovoltáicos (distribuida)",
+	"Importación de energía limpia [NO USADA]"
+],
+
+
+"labels":{"supply":"SUPPLY FROM CFG","demand":"DEMAND LABEL"},
+
+"supply":{	
+	"biocombustibles":{	
+		"levels":[
+			{"1":1, "11":1, "12":1, "13":1, "14":1, "15":1, "16":1, "17":1},
+			{"1":2, "11":2, "12":2, "13":2, "14":2, "15":2, "16":2, "17":2},
+			{"1":3, "11":3, "12":3, "13":3, "14":3, "15":3, "16":3, "17":3},
+			{"1":4, "11":4, "12":4, "13":4, "14":4, "15":4, "16":4, "17":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"eolica":{	
+		"levels":[
+			{"4":1},
+			{"4":2},
+			{"4":3},
+			{"4":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"nuclear":{	
+		"levels":[
+			{"0":1},
+			{"0":2},
+			{"0":3},
+			{"0":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	
+	"solar":{	
+		"levels":[
+			{"8":1,"9":1, "10":1},
+			{"8":2,"9":2, "10":2},
+			{"8":3,"9":3, "10":3},
+			{"8":4,"9":4, "10":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"forestal":{	
+		"levels":[
+			{"37":1,"38":1,"39":1},
+			{"37":2,"38":2,"39":2},
+			{"37":3,"38":3,"39":3},
+			{"37":4,"38":4,"39":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"hidraulica":{	
+		"levels":[
+		          {"5":1,"6":1,"7":1},
+		          {"5":2,"6":2,"7":2},
+		          {"5":3,"6":3,"7":3},
+		          {"5":4,"6":4,"7":4}
+		         ],
+		 "direction":"up",
+		 "value":1
+	},
+	"ccs":{	
+		"levels":[
+			{"2":1, "34":1},
+			{"2":2, "34":2},
+			{"2":3, "34":3},
+			{"2":4, "34":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"petrolera":{	
+		"levels":[
+			{"43":1},
+			{"43":2},
+			{"43":3},
+			{"43":4}
+		],
+		 "direction":"up",
+		 "value":1
+	}	
+},
+
+
+"demand":{
+	"iluminacion":{	
+		"levels":[
+			{"29":1, "30":1, "31":1, "36":1},
+			{"29":2, "30":2, "31":2, "36":2},
+			{"29":3, "30":3, "31":3, "36":3},
+			{"29":4, "30":4, "31":4, "36":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"distribucion_modal":{	
+		"levels":[
+				{"19":1, "22":1,"24":1},
+				{"19":2, "22":2,"24":2},
+				{"19":3, "22":3,"24":3},
+				{"19":4, "22":4,"24":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"demanda_transporte":{	
+			"levels":[
+			{"18":1},
+			{"18":2},
+			{"18":3},
+			{"18":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"escenarios_tec":{	
+		"levels":[
+			{"20":1,"21":1,"23":1},
+			{"20":2,"21":2,"23":2},
+			{"20":3,"21":3,"23":3},
+			{"20":4,"21":4,"23":4}
+			
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	"climatizacion":{	
+		"levels":[
+			{"25":1,"27":1,"28":1,"35":1},
+			{"25":2,"27":2,"28":2,"35":2},
+			{"25":3,"27":3,"28":3,"35":3},
+			{"25":4,"27":4,"28":4,"35":4}
+		],
+		 "direction":"up",
+		 "value":1
+	},
+	
+	"eficiencia_ind":{	
+		"levels":[
+			{"33":1},
+			{"33":2},
+			{"33":3},
+			{"33":4}
+		],
+		 "direction":"up",
+		 "value":1
+	}
+}
+
+} 

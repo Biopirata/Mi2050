@@ -1,0 +1,638 @@
+@CHARSET "UTF-8";
+
+#loading {
+	background:rgba(103,172,180,.6);
+	
+	width: 80%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	z-index: 1000;
+	//border-top-left-radius: 30%; 
+	//border-bottom-left-radius: 30%; 
+}
+
+#loading .progress-label {
+    position: absolute;
+    left: 45%;
+    top: 4px;
+    font-weight: bold;
+    color: #444444;
+    text-shadow: 1px 1px 0 #fff;
+  }
+
+#loading .ui-widget-header{
+	background: rgba(161, 236, 172, .5);
+	border: 0px;// solid rgba(0,0,0,.6);
+}
+
+.main_simulator{
+	width:	950px;
+	height: 620px;
+	overflow: hidden;
+	text-align: center;
+	
+	background-image: url("../assets/fondo/1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	position: relative;
+	z-index:0;
+}
+
+div.meter-container {
+	text-align: center;
+	vertical-align: middle;
+	height: 110px;
+	overflow: visible;
+	width:100%;
+	position: absolute;
+}
+
+div.meter-container > div {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+div#pie_metas{
+	width: 140px;
+	height: 140px;
+	top:-15;
+	
+}
+
+div.metas-jqplot-title{
+	position: absolute;
+	width:100%;
+	bottom: 0px;
+	
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 0px 3px rgba(255,255,255,1);
+}
+
+div.jqplot-highlighter-tooltip {
+	border-radius : 10px;
+	padding:8px;
+	border: 1px solid black;
+	background-color: white;
+	position:absolute;
+	-webkit-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.82);
+	-moz-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.82);
+	box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.82);
+	z-index: 99999;
+	
+	white-space: normal !important;
+	width: 250px;
+}
+
+
+
+
+div.meter {
+	color: red;
+	border: 2px solid black;
+	width:750px;
+	height:20px;
+	overflow: visible;
+	
+	
+	padding: 0;
+	border-radius: 25px;
+
+	
+	top: 27px;
+}
+
+
+
+
+div.meter div.targetMark{
+	
+	overflow:visible;
+	
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+
+	position: relative;
+	float:left;
+	left: 30%;
+	
+	z-index: 1000;
+}
+
+div.meter div.targetMark-bg{
+	background-image: url("../assets/meter/targetMark.png") ;
+	background-repeat: no-repeat;
+	
+	position:relative;
+	left:		-37px;
+	top:		-8px;
+	width:	75px;
+	height:	62px;
+}
+
+div.meter div.filler {
+	border-radius: 24px;
+	background-color: red;
+	background-image: url("../assets/meter/animated_smoke.png");
+	background-position:	left  center;
+	background-repeat: no-repeat;
+	
+	
+	width: 20%;
+	height: 100%;
+	text-align: right;
+
+	position: relative;
+	left: -1px; /*Width of the marker*/
+	float: left;
+	/*
+	-webkit-animation:	animetedSmoke 1s steps(11,end) infinite;
+	-moz-animation:			animetedSmoke 1s steps(11,end) infinite;
+	animation:					animetedSmoke 1s steps(11,end) infinite;
+
+	*/
+	
+	-webkit-transition: width 0.5s; 
+	-moz-transition:		width 0.5s; 
+	transition:					width 0.5s;
+}
+
+
+
+div.meter div.mark{
+	width: 1px;
+	height:100%;
+	overflow:visible;
+	
+	float: right;
+	
+}
+
+div.meter div.mark-bg {
+	background-image: url("../assets/meter/markBG.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	display:block;
+	width: 150px;
+	height:110px;
+	overflow: hidden;
+
+	text-align: center;
+
+	position:relative;	
+	top:-30px;
+	left:-75px;
+
+	padding-top: 35px;
+	
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	
+	z-index: 1002;
+}
+
+div.meter div.mark span {
+	font-size:30px;
+	font-weight:bold;
+	display:inline-block;
+
+	color: black;
+	padding-bottom: 0px;	
+}
+
+div.meter input.button {
+	display:inline-block;
+}
+
+
+
+canvas#simulation{
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+	
+	max-height: 500px;
+	margin-top:0;
+	-webkit-transition: max-height 0.5s, margin-top 0.5s; 
+	-moz-transition:	max-height 0.5s, margin-top 0.5s; 
+	transition:			max-height 0.5s, margin-top 0.5s;
+}
+
+
+
+
+
+
+
+
+
+.controls {
+	bottom: 0px;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	position: absolute;
+	
+	top: auto;
+	bottom: 35px;
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+}
+
+.controls > div {
+	height: 170px;
+	top: 0px;
+	float: left;
+	text-align: center;
+	display: inline-block;	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	transition: width 1s, margin 1s ;
+	
+}
+.controls > div > div{
+	transition: margin 1s ;
+}
+/*
+.controls > div.energy_balance{
+	width:90%;
+	display:block;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+
+
+.controls > div.energy_balance div.open_btn{
+	width:350px;
+	display:block;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	cursor:pointer;
+	
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+	
+	background: rgb(19,19,19); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEzMTMxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0YzRjNGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(19,19,19,1) 0%, rgba(89,89,89,1) 25%, rgba(76,76,76,1) 100%); /* FF3.6+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19,19,19,1)), color-stop(25%,rgba(89,89,89,1)), color-stop(100%,rgba(76,76,76,1))); /* Chrome,Safari4+ */
+/*background: -webkit-linear-gradient(top, rgba(19,19,19,1) 0%,rgba(89,89,89,1) 25%,rgba(76,76,76,1) 100%); /* Chrome10+,Safari5.1+ */
+/*background: -o-linear-gradient(top, rgba(19,19,19,1) 0%,rgba(89,89,89,1) 25%,rgba(76,76,76,1) 100%); /* Opera 11.10+ */
+/*background: -ms-linear-gradient(top, rgba(19,19,19,1) 0%,rgba(89,89,89,1) 25%,rgba(76,76,76,1) 100%); /* IE10+ */
+/*background: linear-gradient(to bottom, rgba(19,19,19,1) 0%,rgba(89,89,89,1) 25%,rgba(76,76,76,1) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-8 */	
+/*}
+
+
+.controls > div.energy_balance .energy_balace_state{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius:50%;
+		background-color: green;
+		background-image: url("2050/controls/energy_balance/thunder.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		vertical-align: middle;
+		
+	
+}	
+
+.controls > div.energy_balance .energy_chart{
+	width: 100%;
+	height: 0px;
+	background-color: purple;
+	overflow : hidden;
+	-webkit-transition: height 0.5s; 
+	-moz-transition:		height 0.5s; 
+	transition:					height 0.5s;
+}
+
+
+.controls > div.energy_balance .energy_chart .chart-content{
+		width: 60%;
+		height: 180px;;
+		overflow: hidden;
+}
+
+*/
+
+
+
+
+
+.level-description {
+	position: absolute;
+	display: block;
+	right: 0;
+	bottom: 0;
+	background-color: blue;
+	border: 1px dashed red;
+	
+	z-index: 9990;
+}
+/*
+.controls > div.supply-controls-label,
+
+.controls > div.supply-controls {
+	background-color: rgba(55,55,35,0.7);
+	background-image:url("2050/controls/fondoSupply.png");
+}
+
+.controls > div.demand-controls-label,
+.controls > div.demand-controls {
+	background-color: rgba(59,38,26,0.7);
+	background-image:url("2050/controls/fondoDemand.png");	
+}
+
+.controls > div.supply-controls-label{
+	border-radius : 23px 0px 0px 23px;
+	width: 7%;
+	position:relative;
+}
+.controls > div.demand-controls-label{
+	border-radius : 0px 23px 23px 0px;
+	width: 7%;
+	position:relative;
+}
+*/
+
+
+.controls > div.supply-controls-label > span{
+	left: -50px;
+	transform: rotate(270deg);
+	position: absolute;
+	top: 52px;
+	height: 67px;
+	width: 170px;
+	display: inline-block;
+	padding: 20px 5px;
+	box-sizing: border-box;
+
+	-webkit-transform	:  rotate(270deg);
+	-moz-transform		:  rotate(270deg);
+	-o-transform		:  rotate(270deg);
+}
+
+
+
+.controls > div.demand-controls-label{
+	border-radius : 0px ;
+	width: 7%;
+	position:relative;
+}
+
+
+.controls > div.demand-controls-label > span{
+	right: -50px;
+	position: absolute;
+	top: 52px;
+	height: 67px;
+	width: 170px;
+	display: inline-block;
+	padding: 20px 5px;
+	box-sizing: border-box;
+
+	transform			: rotate(90deg);
+	-webkit-transform	: rotate(90deg);
+	-moz-transform		: rotate(90deg);
+	-o-transform		: rotate(90deg);
+}
+
+.controls > div.supply-controls-label > span,
+.controls > div.demand-controls-label > span{
+	font-weight: bolder;			
+}
+
+.controls > div.supply-controls {
+	background-position:0px 115px;
+	background-repeat:repeat-x;
+	border-radius:0px;
+	text-align: left;
+	width: 51%; 
+}
+
+.controls > div.demand-controls {
+	background-position:0px 115px;
+	background-repeat:repeat-x;
+	border-radius : 0px;
+	text-align: right;
+	width: 35%; 
+}
+
+.controls > div.demand-controls .twentyfive-slider-container .ui-slider{
+	background-color: transparent;
+}
+
+.controls > div.supply-controls .twentyfive-slider-container .ui-slider{
+	background-color: transparent;
+}
+/*
+.twentyfive-slider-container{
+	display: inline-block;
+	border-radius:5px;
+
+	width: 10.5%; /* For 8 controls. Its calculated in the javascript*/
+/*	height: 100%; 
+	padding: 7px 5px 7px 5px;
+
+	text-align: center;
+	overflow: hidden;
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+*/
+.twentyfive-slider-container .ui-slider {
+	background-image:url("2050/controls/spinner/bg_escala.png"); 
+	background-image: url("../assets/sliders/fondo.png");
+	background-position: center center;
+	b_ackground-size:100% 100%;
+	width: 98%;
+	height: 103px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	border: 0px;
+}
+
+.twentyfive-slider-container .ui-slider-range{
+	
+	display:block;
+	width: 12px;
+	border: 0 !important;
+	left:50%;
+	margin-left: -6px;
+	background-color: white;
+	border-color: white;
+	background-position: 0 8;
+	
+	
+}
+
+.twentyfive-slider-container .ui-slider-handle {
+	border: none;
+	outline: 0;
+	background: none;
+	background-image: url("../assets/sliders/handler.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 28px;
+	height: 29px;
+	left: 50%;
+	margin-left:-14px;
+	margin-top:-16px;
+	cursor: row-resize;	
+	
+}
+
+.twentyfive-slider-container .label {
+	font-size: 8px;
+	color: white;
+	font-weight: bold;
+	line-height: 12px;
+
+} 
+
+.twentyfive-slider-container .label a {
+	cursor: pointer;
+}
+
+
+
+
+.info-pane {
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+	width: 100%;			
+}
+
+
+
+.info-pane .sharePanel {
+	margin-top: 6px;
+	text-align: left;
+	padding-left: 150px;		
+}
+
+input.sound-ctr{
+	background: none;
+	background-image:url("2050/controls/audio/play.png");
+	background-position: center center;
+	border: 0;
+	width: 32px;
+	height: 32px;
+	float: right;
+	cursor: pointer;
+	outline: 0;
+	background-size: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+input.sound-ctr:hover{
+	background-color: rgba(255,255,255,0.5);	
+}
+
+input.sound-ctr.mute{
+	background-image:url("2050/controls/audio/mute.png");
+}
+
+input.sound-ctr:hover, input.sound-ctr:active, input.sound-ctr:focus{
+	outline: 0;
+	border: 0;
+	
+}
+input::-moz-focus-inner { 
+  border: 0; 
+  
+}
+
+
+
+div.animated-bg{
+	position: absolute;
+	top:0;
+	left: 0;	
+	width: 100%;
+	height: 100%;
+	z-index : -1;
+}
+
+
+div.animated-bg img {
+	position: absolute;
+	top:0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+	transition			: opacity 1.5s ease-in-out;
+	-moz-transition		: opacity 1.5s ease-in-out;
+	-webkit-transition	: opacity 1.5s ease-in-out;
+}
+
+#nuevecito {
+
+	height: 110px; 
+	width: 110px; 
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	z-index: 10000;
+	padding-left: 806px;
+	padding-top: 4;
+}
+
+
+#nuevecito img {
+	height: 88px;
+	width: 88px;
+}
+
+
+
+
+
+
+
+/**
+DIALOG
+*/
+
+.ui-dialog div.info.biocombustibles{
+	background: url("../assets/icons/bioC.png") top right no-repeat;
+}
+
+
+
+
+
+
+
+.share-widgets-container {
+	text-align: center;
+	margin-bottom: 20px;		
+}
