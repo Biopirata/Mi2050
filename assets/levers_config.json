@@ -6,12 +6,9 @@
 	],
 
 "url_model":"getPathway.php",
-"default_pathway" : "1111111111111111111111111111111111111111111111111111111111111",
-
+"default_pathway" : "1111111111111111111111111111111111111111111111111111111111111111111",
 
 "ghg_reduction_gol_percentage" : 50,
-
-
 
 "max_energy_balance_overdemmand_percentage" : 30,
 "clean_energy_meta" : 30,
