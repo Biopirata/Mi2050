@@ -37,7 +37,8 @@
 				strDebug += ctrName + " = " + value + "\n";
 			}
 
-			var RandVal = Math.floor(Math.random() * 100);
+			//var RandVal = Math.floor(Math.random() * 100);
+			var RandVal = 3*100
 			var newVal = RandVal;
 
 			$.post(urlModel, {
