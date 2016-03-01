@@ -7,7 +7,7 @@
 
 "url_model":"getPathway.php",
 
-"default_pathway" : "11010111111101111101100000111011011000110101103110101001100100000132",
+"default_pathway" : "11010111111101113101100000111011011000110101101110101001100200000131",
 
 "ghg_reduction_gol_percentage" : 50,
 
@@ -100,13 +100,13 @@
 	},
 	"petrolera":{	
 		"levels":[
-			{"65":1},
-			{"65":2},
+			{"65":4},
 			{"65":3},
-			{"65":4}
+			{"65":2},
+			{"65":1}
 		],
-		 "direction":"up",
-		 "value":1
+		 "direction":"down",
+		 "value":4
 	}	
 },
 
@@ -134,13 +134,13 @@
 	},
 	"demanda_transporte":{	
 			"levels":[
-			{"26":1},
-			{"26":2},
+			{"26":4},
 			{"26":3},
-			{"26":4}
+			{"26":2},
+			{"26":1}
 		],
-		 "direction":"up",
-		 "value":1
+		 "direction":"down",
+		 "value":4
 	},
 	"escenarios_tec":{	
 		"levels":[

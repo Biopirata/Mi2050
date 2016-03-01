@@ -62,17 +62,17 @@
 ]]></label>
 
 <label id="energy-balance-pane-icon-desciption-icon-under"><![CDATA[
-	La demanda excede la oferta
+	La demanda excede la producción de energía.
 ]]></label>
 
 
 <label id="energy-balance-pane-icon-desciption-icon-balanced"><![CDATA[
-	Tienen un mundo en balance
+	Tienes un mundo en balance
 ]]></label>
 
 
 <label id="energy-balance-pane-icon-desciption-icon-upper"><![CDATA[
-	La oferta excede demasiado a la demanda. Se desperdicia energia
+	Produces mucha más energía de la demandada.
 ]]></label>
 
 
@@ -92,7 +92,7 @@
 		*******************************************
 -->
 <label id="meta-energ-char-label"><![CDATA[
-			Metas 2 energias limpias cambio
+			Fracción de energía no-fósil
 	]]></label>
 
 <label id="meta-energ-meta-nolimpia"><![CDATA[
@@ -109,7 +109,7 @@
 	]]></label>
 
 <label id="meta-energ-actual-limpia"><![CDATA[
-		Porcentage de energia generará por tecnologías renobables para el 2050 según tu configuración
+		Porcentage de energia generará por tecnologías renovables para el 2050 según tu configuración
 	]]></label>
 
 <label id="meta-energ-info"><![CDATA[
@@ -131,7 +131,7 @@
 		-->
 	<label id="biocombustibles-label"> 
 		<![CDATA[
-		Bioenergía y residuos
+		Bioenergía, agricultura y residuos
 	]]></label>	
 
 	<label id="biocombustibles-info-level-1">
@@ -289,7 +289,7 @@
 	
 	
 	<label id="forestal-label"><![CDATA[
-		Deforestación y reforestación
+		Evitar deforestación y reforestación
 	]]></label>
 	<label id="forestal-info-level-2"><![CDATA[
 		forestal-info-level-2
@@ -318,7 +318,7 @@
 	
 	
 	<label id="hidraulica-label"><![CDATA[
-		Otras energías renovables
+		Otras renovables
 	]]></label>
 	<label id="hidraulica-info-level-2"><![CDATA[
 		hidraulica-info-level-2
@@ -371,7 +371,7 @@
 	
 	
 	<label id="iluminacion-label"><![CDATA[
-		Iluminación y electrodomésticos
+		Uso de electrodomésticos
 	]]></label>
 	<label id="iluminacion-info-level-2"><![CDATA[
 		iluminacion-info-level-2
@@ -475,7 +475,7 @@
 		-->
 	
 	<label id="climatizacion-label"><![CDATA[
-		Climatización y calor
+		Climatización
 	]]></label>
 	<label id="climatizacion-info-level-2"><![CDATA[
 		climatizacion-info-level-2
