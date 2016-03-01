@@ -131,7 +131,7 @@
 		-->
 	<label id="biocombustibles-label"> 
 		<![CDATA[
-		Bioenergía
+		Bioenergía y residuos
 	]]></label>	
 
 	<label id="biocombustibles-info-level-1">
@@ -184,7 +184,7 @@
 		*******************************************
 		-->
 	<label id="eolica-label"><![CDATA[
-				Eólica
+				Energía eólica
 	]]></label>
 	<label id="eolica-info-level-2"><![CDATA[
 				eolica-info-level-2
@@ -219,7 +219,7 @@
 	
 	
 	<label id="nuclear-label"><![CDATA[
-				Nuclear
+				Energía nuclear
 	]]></label>
 	<label id="nuclear-info-level-2"><![CDATA[
 				nuclear-info-level-2
@@ -255,7 +255,7 @@
 	
 	
 	<label id="solar-label"><![CDATA[
-		Solar
+		Energía Solar
 	]]></label>
 	<label id="solar-info-level-2"><![CDATA[
 		solar-info-level-2
@@ -289,7 +289,7 @@
 	
 	
 	<label id="forestal-label"><![CDATA[
-		Forestal
+		Deforestación y reforestación
 	]]></label>
 	<label id="forestal-info-level-2"><![CDATA[
 		forestal-info-level-2
@@ -318,7 +318,7 @@
 	
 	
 	<label id="hidraulica-label"><![CDATA[
-		Otras renovables
+		Otras energías renovables
 	]]></label>
 	<label id="hidraulica-info-level-2"><![CDATA[
 		hidraulica-info-level-2
@@ -371,7 +371,7 @@
 	
 	
 	<label id="iluminacion-label"><![CDATA[
-		Iluminación
+		Iluminación y electrodomésticos
 	]]></label>
 	<label id="iluminacion-info-level-2"><![CDATA[
 		iluminacion-info-level-2
@@ -475,7 +475,7 @@
 		-->
 	
 	<label id="climatizacion-label"><![CDATA[
-		Eficiencia en el hogar 
+		Climatización y calor
 	]]></label>
 	<label id="climatizacion-info-level-2"><![CDATA[
 		climatizacion-info-level-2
@@ -525,7 +525,7 @@
 		*******************************************
 		-->
 	<label id="petrolera-label"><![CDATA[
-		Producción Fosil
+		Producción fósil
 	]]></label>
 	<label id="petrolera-info-level-2"><![CDATA[
 		petrolera-info-level-2
