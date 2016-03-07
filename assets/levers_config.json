@@ -140,13 +140,13 @@
 	},
 	"demanda_transporte":{	
 			"levels":[
-			{"26":4},
-			{"26":3},
+			{"26":1},
 			{"26":2},
-			{"26":1}
+			{"26":3},
+			{"26":4}
 		],
-		 "direction":"down",
-		 "value":4
+		 "direction":"up",
+		 "value":1
 	},
 	"escenarios_tec":{	
 		"levels":[
