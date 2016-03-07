@@ -1,21 +1,28 @@
 <labels>
 
 <label id="energy-balance-pane-icon-desciption-title"><![CDATA[
-	¿Cuán balanceado es tu ruta?
+
+	¿Cuán balanceado es tu escenario?
+
 ]]></label>
 
 <label id="energy-balance-pane-icon-desciption-icon-under"><![CDATA[
-	La demanda excede la oferta
+
+	La demanda excede la oferta, hay que producir más.
+
 ]]></label>
 
-
 <label id="energy-balance-pane-icon-desciption-icon-balanced"><![CDATA[
-	Tienen un mundo en balance
+
+	Haz logrado un sistema en balance.
+
 ]]></label>
 
 
 <label id="energy-balance-pane-icon-desciption-icon-upper"><![CDATA[
-	La oferta excede demasiado a la demanda. Se desperdicia energia
+
+	La oferta excede demasiado a la demanda. Se desperdicia energia.
+
 ]]></label>
 
 
@@ -23,36 +30,41 @@
 	
 				Asegura que logres balance energético
 	
-
 </label><label id="btn-submit-path-label">
 	
 				Comparte tu escenario
 	
-
 </label><label id="info-dialog-sel-value-label">
 	
-			Valor seleccionado : 
-	
+			Valor seleccionado : 	
 
 </label><!-- 
 		*******************************************
 		Grafica metas energeticas
 		*******************************************
 --><label id="meta-energ-char-label">
+
 			Electricidad: [value]% generada con energía límpia
+
 	</label><label id="meta-energ-meta-nolimpia">
+
 			Meta en el porcentage de energía generada por combustibles fosiles para el 2050 
+
 	</label><label id="meta-energ-meta-limpia">
+
 			Meta en el porcentage de energía generada por tecnoligías renovables para el 2050
+
 	</label><label id="meta-energ-actual-nolimpia">
 
-		Porcentaje de energia generará por combustibles fósiles para el 2050 según tu configuración 
+			Porcentaje de energia generará por combustibles fósiles para el 2050 según tu configuración 
 
 	</label><label id="meta-energ-actual-limpia">
-		Porcentage de energia generará por tecnologías renobables para el 2050 según tu configuración
+
+			Porcentage de energia generará por tecnologías renobables para el 2050 según tu configuración
+	
 	</label><label id="meta-energ-info">
-			Un parrafo explicativo de la iniciativa del gobierno federal sobre el uso de energias renovables o limpiar
-	en porcentage con respecto ala cantidad total.
+
+			Un parrafo explicativo de la iniciativa del gobierno federal sobre el uso de energias renovables o limpiar en porcentage con respecto ala cantidad total.
 	
 	</label><!-- 
 		*******************************************
@@ -60,7 +72,6 @@
 		*******************************************
 		
 --><label id="biocombustibles-label"> 
-		
 	
 		Bioenergía
 	
@@ -82,6 +93,7 @@
 	</label><label id="biocombustibles-description-icon">
 		
 					assets/icons/bioC.png	
+
 		</label><label id="biocombustibles-description">
 
 				<p>En el sector agropecuario hay grandes oportunidades para la reducción de emisiones. Se pueden obtener combustibles más limpios que los hidrocarburos, produciendo biocombustibles o aprovechando el potencial de las algas, y se pueden reducir emisiones que se generan hoy en día por el uso de fertilizantes o por los residuos que se generan.</p>
@@ -614,7 +626,11 @@
 		*******************************************
 		
 --><label id="SUPPLY FROM CFG">
+
 				Oferta
+
 	</label><label id="DEMAND LABEL">
+
 				Demanda
+
 	</label></labels>
