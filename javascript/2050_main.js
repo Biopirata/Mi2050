@@ -130,8 +130,8 @@
 			 * *********************************************
 			 */
 			
-			var ghgPRed = json_model_data.ghg_reduction_from_2000;
-			var newVal = 100*(1 - parseFloat(json_model_data.ghg_reduction_from_2000));
+			var ghgPRed	= json_model_data.ghg_reduction_from_2000;
+			var newVal	= 100*(1 - parseFloat(json_model_data.ghg_reduction_from_2000));
 
 			var filler = $(".meter .filler",this.element);
 			var roundVal = Math.round(newVal);
@@ -196,18 +196,24 @@
 			var pie_metas = $('#pie_metas').data('jqplot');
 		
 			
-			console.log("Que datos tenemos en el pir ",pie_metas.series);
-			var metasSerie = pie_metas.series[1];
+			
+			var metasSerie  = pie_metas.series[1];
 			var metActSerie = pie_metas.series[0];
 			var meta = this.controlsCfg.clean_energy_meta;
 			/*if(metAct == false){
 				metAct = Math.floor(Math.random()* meta);
 			}
 		*/
+			console.log("Vamos a actualizar la meta ",meta);
+			metActSerie.data[0][1] = 100-metAct;
 			metActSerie.data[1][1] = metAct;
+
+			metasSerie.data[0][1] = 100-meta;
+			metasSerie.data[1][1] = meta;
+
 			pie_metas.replot({ resetAxes : true });
 			pie_metas.redraw();
-			this.addMetasChartTitle($('#pie_metas'));
+			this.addMetasChartTitle($('#pie_metas'),metAct);
 			
 			
 			var energy_balance = $('#energy-balance-chart').data('jqplot');
@@ -217,7 +223,7 @@
 			//To match the origin of tow pies 
 			$('#pie_metas > canvas:nth-child(8)').css('top',12).css('left',12);
 			
-			console.log("Actualizando el balance : ",energy_balance.series);
+			//console.log("Actualizando el balance : ",energy_balance.series);
 			
 			// ELectricity
 			var dataDemand = json_model_data.electricity.demand;
@@ -315,12 +321,15 @@
 				var metAct = false;
 				try {
 					json_model_data = JSON.parse(data);
-				//	console.log("Que sale de la simulacion : ",json_model_data);
+					console.log(
+						"*******************************************************************\n"+
+						"Que sale de la simulacion : \n",json_model_data,
+						"\n*******************************************************************\n");
 					$updateAux(json_model_data);
 				} catch (e_json) {
 				//	console.log("Hubo error un al contactar el servicio del modelo URL : ", urlModel);
 				//	console.log("\t std,textStatus", std,textStatus);
-				//	console.log("Exception : ",e_json);
+					console.log("Exception : ",e_json);
 					$updateAux(fakeModel.getResult());
 				}
 			});
@@ -331,11 +340,20 @@
 		/**
 		 * 
 		 */
-		this.addMetasChartTitle = function(jqElement) {
+		this.addMetasChartTitle = function(jqElement, porcentaje) {
+			porcentaje = porcentaje || 0;
+			porcentaje = Math.floor(porcentaje);
+
 			var myTitle = $('<div>', {
 				'class' : "metas-jqplot-title",
 			}).insertAfter($('.jqplot-grid-canvas', jqElement));
-			myTitle.html(this.getLabelFor('meta-energ-char-label'));
+			
+			var tmpTxt = this.getLabelFor('meta-energ-char-label');
+			tmpTxt = tmpTxt.replace(/\[value\]/g,porcentaje);
+			console.log(" #####################3 Vamos a actualizar el titulo : ", tmpTxt);
+			myTitle.html(tmpTxt);
+
+			console.log("Creando el lslslsl asdasda sda sd");
 		};
 
 		/**
@@ -539,14 +557,14 @@
 				"id" : 'pie_metas'
 			});
 			chartContainer.insertBefore(meter);
-
+			var meta = this.controlsCfg.clean_energy_meta;
 			var s1 = [
-			          [this.getLabelFor('meta-energ-meta-nolimpia'), 65],
-			          [this.getLabelFor('meta-energ-meta-limpia'), 35], 
+			          [this.getLabelFor('meta-energ-meta-nolimpia'), 100],
+			          [this.getLabelFor('meta-energ-meta-limpia'), 0], 
 			         ];
 			var s2 = [
-			          [this.getLabelFor('meta-energ-actual-nolimpia'), 80],
-			          [this.getLabelFor('meta-energ-actual-limpia'), 20], 
+			          [this.getLabelFor('meta-energ-actual-nolimpia'), 100-meta],
+			          [this.getLabelFor('meta-energ-actual-limpia'), meta], 
 			         ];
 			
 			var jqplotData = [s1 ,s2];
@@ -942,17 +960,19 @@
 
 				var sliderData = (target.data())['lever'] || defLevelDesc;
 				var dialogMsg = $('.level-description');
-				dialogMsg.html("Value : "
+				dialogMsg.html(
+						'<span class="lever-info-title">'
+						+this.getLabelFor('info-dialog-sel-value-label') 
 						+ value
-						+ "<br>"
+						+'</span>'
 						+ this.getLabelFor(sliderData.id + '-info-level-'
 								+ value));
 
 				if (!dialogMsg.is(":visible")) {
 					var ctrClosed = $(".controls .closed");
 					dialogMsg.show();
-					dialogMsg.width(ctrClosed.width() - 10);
-					dialogMsg.height(ctrClosed.height() - 10);
+					dialogMsg.width(ctrClosed.outerWidth() - 20);
+					dialogMsg.height(ctrClosed.outerHeight() - 25);
 
 					dialogMsg.position({
 						of : ctrClosed,
@@ -1273,110 +1293,11 @@
 				$("#loading", $('.main_simulator')).progressbar("option", {
 					value : 100 * event.progress
 				});
+				this.onAssetsLoadProgress(event);
 			};
 
 			var completeHandler = function(event) {
-				// LEVERS
-				this.controlsCfg = this.loader.getResult('leversConfig');
-				//console.log("Configuracion palancas:",this.controlsCfg);
-				var listLabels = this.loader.getResult('labelsConfig');
-				if (!listLabels) {
-					alert("No se encontró la configuracion de las etiquetas: \n : file : assets/configLabels.xml");
-					return;
-				}
-				this.xmlLabels = listLabels;
-				listLabels = listLabels.getElementsByTagName('label');
-				this.labels = {};
-				for (var i = 0; i < listLabels.length; i++) {
-					var node = listLabels[i];
-					this.labels[node.getAttribute('id')] = node.textContent.trim();
-				}
-				
-				console.log("Que traducciones tenemos : ",this.labels);
-				this.url_2050Model = this.controlsCfg.url_model
-						|| 'getPathway.php';
-
-				// ANIMATIOS
-				var order = this.loader.getResult('animationLayerConfig');
-				if(!order){
-					console.log("No se cargo la configuracion de las capas");
-				}
-				var sprites = {};
-				for (var layerID = order.length - 1; layerID > -1; layerID--) {
-					var currCfg = order[layerID];
-					var object = null;
-				
-					if (currCfg.type != 'animated' ) {
-						var loadedImg = this.loader.getResult(currCfg.id);
-						if(loadedImg){
-							object = new createjs.Bitmap(loadedImg);
-						}else{
-							console.log("No se encontro la capa estatica : ",currCfg.id);
-							continue;
-						}
-					} else {
-						var jsonId = 'sprite_json_' + currCfg.id;
-						var tmpCfg = this.loader.getResult(jsonId);
-						if (!tmpCfg) {
-							console.log("No se encontro la capa animada : ",jsonId);
-							continue;
-						}
-						if(!tmpCfg.images){
-							console.log("No se encontro el arreglo de imagenes : ["+jsonId+"] \n",tmpCfg);
-							continue;
-						}
-						
-						var loadedImages = [];
-						for(var j = 0 ; j < tmpCfg.images.length; j++ ){
-							var src_img = tmpCfg.images[j];
-							var loadImg = src_img;
-							if(src_img.lastIndexOf){
-								var idxP = src_img.lastIndexOf('.');  
-								src_img = src_img.substring(0,idxP);
-								var loadImg = this.loader.getResult(src_img);
-							}
-							if(!loadImg){
-								console.log("No se pudo cargar la imagen : ",src_img);
-								continue;
-							}
-							loadedImages.push(loadImg);
-						}
-						
-						if(tmpCfg.animations){
-							tmpCfg.images		= loadedImages;
-							var ssData			= new createjs.SpriteSheet(tmpCfg);
-							ssData.originalCfg	= tmpCfg;
-							object = new createjs.Sprite(ssData, Object.keys(tmpCfg.animations)[0]);	
-						} else {
-							console.log("No se encontraron las animaciones en el spritesheet: ["+jsonId+"] \n",tmpCfg);
-							continue;
-						}
-						
-					}
-					object.x = currCfg.x;
-					object.y = currCfg.y;
-					object.cfg = currCfg;
-					var count = 0;
-					var idSp = currCfg.id;
-					while(sprites[idSp]){
-						count++;
-						idSp = currCfg.id+'_'+count;
-					}
-					
-					sprites[idSp] = object;
-				}
-
-				this.sprites = sprites;
-				this.initAnimatedBackground();
-				this.initMeter();
-				this.initAnimation(sprites);
-				this.initControls();
-				//$("#loading", this.element).remove();
-				$( ".progress-label" ).text("Listo!!");
-				$("#loading", $('.main_simulator')).remove(); //quitamos la barra de progreso
-				event.target.removeEventListener('progress', progressHandler,
-						true);
-				this.updateModel();
+				this.onAssetsLoadComplete(event);
 			};
 
 			var errorHandler = function(event,a,b) {
@@ -1386,9 +1307,130 @@
 			completeHandler = $.proxy(completeHandler, this);
 			progressHandler = $.proxy(progressHandler, this);
 
+			
+
 			this.preloadAssets(completeHandler, progressHandler, errorHandler);
 		};
 		
+
+		/**
+			TO OVERWRIDE
+		*/
+		this.onAssetsLoadComplete = function ( event ){
+			this.initDisplayAnimations();
+		}
+
+		/**
+		*/
+		this.onAssetsLoadProgress = function(event){
+
+		}
+
+		/**
+		*/
+		this.initDisplayAnimations = function(){
+			// LEVERS
+			this.controlsCfg = this.loader.getResult('leversConfig');
+			//console.log("Configuracion palancas:",this.controlsCfg);
+			var listLabels = this.loader.getResult('labelsConfig');
+			if (!listLabels) {
+				alert("No se encontró la configuracion de las etiquetas: \n : file : assets/configLabels.xml");
+				return;
+			}
+			this.xmlLabels = listLabels;
+			listLabels = listLabels.getElementsByTagName('label');
+			this.labels = {};
+			for (var i = 0; i < listLabels.length; i++) {
+				var node = listLabels[i];
+				this.labels[node.getAttribute('id')] = node.textContent.trim();
+			}
+			
+			console.log("Que traducciones tenemos : ",this.labels);
+			this.url_2050Model = this.controlsCfg.url_model
+					|| 'getPathway.php';
+
+			// ANIMATIOS
+			var order = this.loader.getResult('animationLayerConfig');
+			if(!order){
+				console.log("No se cargo la configuracion de las capas");
+			}
+			var sprites = {};
+			for (var layerID = order.length - 1; layerID > -1; layerID--) {
+				var currCfg = order[layerID];
+				var object = null;
+			
+				if (currCfg.type != 'animated' ) {
+					var loadedImg = this.loader.getResult(currCfg.id);
+					if(loadedImg){
+						object = new createjs.Bitmap(loadedImg);
+					}else{
+						console.log("No se encontro la capa estatica : ",currCfg.id);
+						continue;
+					}
+				} else {
+					var jsonId = 'sprite_json_' + currCfg.id;
+					var tmpCfg = this.loader.getResult(jsonId);
+					if (!tmpCfg) {
+						console.log("No se encontro la capa animada : ",jsonId);
+						continue;
+					}
+					if(!tmpCfg.images){
+						console.log("No se encontro el arreglo de imagenes : ["+jsonId+"] \n",tmpCfg);
+						continue;
+					}
+					
+					var loadedImages = [];
+					for(var j = 0 ; j < tmpCfg.images.length; j++ ){
+						var src_img = tmpCfg.images[j];
+						var loadImg = src_img;
+						if(src_img.lastIndexOf){
+							var idxP = src_img.lastIndexOf('.');  
+							src_img = src_img.substring(0,idxP);
+							var loadImg = this.loader.getResult(src_img);
+						}
+						if(!loadImg){
+							console.log("No se pudo cargar la imagen : ",src_img);
+							continue;
+						}
+						loadedImages.push(loadImg);
+					}
+					
+					if(tmpCfg.animations){
+						tmpCfg.images		= loadedImages;
+						var ssData			= new createjs.SpriteSheet(tmpCfg);
+						ssData.originalCfg	= tmpCfg;
+						object = new createjs.Sprite(ssData, Object.keys(tmpCfg.animations)[0]);	
+					} else {
+						console.log("No se encontraron las animaciones en el spritesheet: ["+jsonId+"] \n",tmpCfg);
+						continue;
+					}
+					
+				}
+				object.x = currCfg.x;
+				object.y = currCfg.y;
+				object.cfg = currCfg;
+				var count = 0;
+				var idSp = currCfg.id;
+				while(sprites[idSp]){
+					count++;
+					idSp = currCfg.id+'_'+count;
+				}
+				
+				sprites[idSp] = object;
+			}
+
+			this.sprites = sprites;
+			this.initAnimatedBackground();
+			this.initMeter();
+			this.initAnimation(sprites);
+			this.initControls();
+			//$("#loading", this.element).remove();
+			$( ".progress-label" ).text("Listo!!");
+			$("#loading", $('.main_simulator')).remove(); //quitamos la barra de progreso
+			event.target.removeEventListener('progress', progressHandler,
+					true);
+			this.updateModel();
+		}
 		
 		/**
 		 * 
@@ -1467,15 +1509,3 @@
 	twentyfiveMX.AnimatedSimulator = AnimatedSimulator;
 }(window.twentyfiveMX = window.twentyfiveMX || {}, jQuery));// END Define
 															// namespace
-
-$(function() {
-	if (!String.prototype.trim) {
-		String.prototype.trim = function() {
-			return this.replace(/^\s+|\s+$/g, '');
-		};
-	}
-	var simulator = new twentyfiveMX.AnimatedSimulator($('.main_simulator'));
-	simulator.init();
-	
-	window.simulator = simulator; 
-});

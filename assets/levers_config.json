@@ -5,14 +5,19 @@
 		""
 	],
 
+
 "url_model":"getPathway.php",
 
 "default_pathway" : "11010111111101113101100000111011011000110101101110101001100200000131",
 
-"ghg_reduction_gol_percentage" : 50,
 
+"ghg_reduction_gol_percentage" : 50,
 "max_energy_balance_overdemmand_percentage" : 30,
 "clean_energy_meta" : 30,
+
+
+"labels":{"supply":"SUPPLY FROM CFG","demand":"DEMAND LABEL"},
+
 "clean_energy_search_labels" : [
 	"Energía nuclear",
 	"Eólica (tierra y costa)",
@@ -21,10 +26,11 @@
 	"Tidal Stream",
 	"Geotérmica",
 	"Paneles solares fotovoltáicos (distribuida)",
-	"Importación de energía limpia [NO USADA]"
+	"Importación de energía limpia [NO USADA]",
+	"Solar fotovoltáica y termosolar"
 ],
 
-"labels":{"supply":"SUPPLY FROM CFG","demand":"DEMAND LABEL"},
+
 
 "supply":{	
 	"biocombustibles":{	
@@ -114,13 +120,13 @@
 "demand":{
 	"iluminacion":{	
 		"levels":[
-			{"41":1, "52":1},
-			{"41":2, "52":2},
+			{"41":4, "52":4},
 			{"41":3, "52":3},
-			{"41":4, "52":4}
+			{"41":2, "52":2},
+			{"41":1, "52":1}
 		],
-		 "direction":"up",
-		 "value":1
+		 "direction":"down",
+		 "value":4
 	},
 	"distribucion_modal":{	
 		"levels":[

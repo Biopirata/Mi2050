@@ -1,6 +1,6 @@
 <?php
 $baseUrl = "http://localhost:9292";
-$baseUrl = 'http://52.26.237.126';
+$baseUrl = "http://52.26.237.126";
 $operation = (array_key_exists('operation',$_POST))?$_POST['operation']:'structure';
 
 

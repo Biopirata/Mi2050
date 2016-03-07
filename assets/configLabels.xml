@@ -1,558 +1,620 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE labels [
-	<!ELEMENT labels (label+)>
-	 <!ELEMENT label (#PCDATA)>
-	 <!ATTLIST label id ID #REQUIRED>
-]>
 <labels>
-
-<label id="btn-submit-path-label"><![CDATA[
-	Comparte tu ruta 
-]]></label>
-
-<label id="warning-energy-balance-on-share"><![CDATA[
-	<b>Tu producción de energia electrica y de combustibles es menor a tu demanda</b><br>
-	Verificar el indicador de balance energético antes de compartir tu ruta.
-	 
-]]></label>
-
-
-<label id="warning-energy-balance-on-share-exit"><![CDATA[
-	Regresar a cambiar mi ruta
-]]></label>
-
-<label id="warning-energy-balance-window-title"><![CDATA[
-	Balance de oferta y demanda energética incorrecto
-]]></label>
-
-
-
-<label id="share-path-dialog-title"><![CDATA[
-	Compartir en redes sociales
-]]></label>
-
-
-<label id="share-path-dialog-description"><![CDATA[
-	Bien hecho, ahora puedes compartir con tus amigos y familiares tu visión de como 
-	debe cambiar México para lograr la meta.
-]]></label>
-
-<label id="share-path-dialog-link-title"><![CDATA[
-	El texto que se utilizara, si el api lo permite a agregar dentro de la publicación
-]]></label>
-
-<label id="share-path-dialog-link-summary"><![CDATA[
-	Una descripcion de lo que se quiere compartir. Es el texto que aparece adjunto al link en la publicación
-]]></label>
-
-<label id="share-path-dialog-link-text"><![CDATA[
-	btn
-]]></label>
-
-
-
-<label id="energy-balance-pane-title"><![CDATA[
-	Balance energético
-	
-]]></label>
-
 
 <label id="energy-balance-pane-icon-desciption-title"><![CDATA[
 	¿Cuán balanceado es tu ruta?
 ]]></label>
 
 <label id="energy-balance-pane-icon-desciption-icon-under"><![CDATA[
-	La demanda excede la producción de energía.
+	La demanda excede la oferta
 ]]></label>
 
 
 <label id="energy-balance-pane-icon-desciption-icon-balanced"><![CDATA[
-	Tienes un mundo en balance
+	Tienen un mundo en balance
 ]]></label>
 
 
 <label id="energy-balance-pane-icon-desciption-icon-upper"><![CDATA[
-	Produces mucha más energía de la demandada.
+	La oferta excede demasiado a la demanda. Se desperdicia energia
 ]]></label>
 
 
+	<label id="energy-balance-pane-title">
+	
+				Asegura que logres balance energético
+	
 
+</label><label id="btn-submit-path-label">
+	
+				Comparte tu escenario
+	
 
-
-<label id="info-dialog-sel-value-label"><![CDATA[
+</label><label id="info-dialog-sel-value-label">
+	
 			Valor seleccionado : 
-]]></label>
+	
 
-
-
-
-<!-- 
+</label><!-- 
 		*******************************************
 		Grafica metas energeticas
 		*******************************************
--->
-<label id="meta-energ-char-label"><![CDATA[
-			Fracción de energía no-fósil
-	]]></label>
-
-<label id="meta-energ-meta-nolimpia"><![CDATA[
+--><label id="meta-energ-char-label">
+			Electricidad: [value]% generada con energía límpia
+	</label><label id="meta-energ-meta-nolimpia">
 			Meta en el porcentage de energía generada por combustibles fosiles para el 2050 
-	]]></label>
-
-<label id="meta-energ-meta-limpia"><![CDATA[
+	</label><label id="meta-energ-meta-limpia">
 			Meta en el porcentage de energía generada por tecnoligías renovables para el 2050
-	]]></label>
+	</label><label id="meta-energ-actual-nolimpia">
 
-<label id="meta-energ-actual-nolimpia"><![CDATA[
-		Porcentage de energia generará por combustibles fósiles para el 2050 según tu configuración 
+		Porcentaje de energia generará por combustibles fósiles para el 2050 según tu configuración 
 
-	]]></label>
-
-<label id="meta-energ-actual-limpia"><![CDATA[
-		Porcentage de energia generará por tecnologías renovables para el 2050 según tu configuración
-	]]></label>
-
-<label id="meta-energ-info"><![CDATA[
+	</label><label id="meta-energ-actual-limpia">
+		Porcentage de energia generará por tecnologías renobables para el 2050 según tu configuración
+	</label><label id="meta-energ-info">
 			Un parrafo explicativo de la iniciativa del gobierno federal sobre el uso de energias renovables o limpiar
 	en porcentage con respecto ala cantidad total.
 	
-	]]></label>
-
-
-
-
-
-
-
-	<!-- 
+	</label><!-- 
 		*******************************************
 		Palanca 01 level info & Descripción
 		*******************************************
-		-->
-	<label id="biocombustibles-label"> 
-		<![CDATA[
-		Bioenergía, agricultura y residuos
-	]]></label>	
+		
+--><label id="biocombustibles-label"> 
+		
+	
+		Bioenergía
+	
+	</label><label id="biocombustibles-info-level-1">
 
-	<label id="biocombustibles-info-level-1">
-		<![CDATA[
-					Descipción para le nivel <b>1</b> de la planca biocombustibles
+				No se usan bioenergéticos, no se aprovecha el biogás de las aguas residuales, ni se aprovechan las algas marinas. Los residuos urbanos se triplican hasta 3 kilos por persona y sólo una mínima fracción es manejada.
 		
-	]]></label>
-	<label id="biocombustibles-info-level-2">
-		<![CDATA[
-					Descipción para le nivel <b>2</b> de la planca biocombustibles
+	</label><label id="biocombustibles-info-level-2">
+
+				Se aprovecha la biomasa para producir 6 gW de energía, hay 560 km2 de algas marinas sembradas para su uso (Cozumel tiene 647 km2 de superficie) y se siembran biocombustibles en 5 millones 300 mil hectáreas de tierra. El 15% del biogás que generan las aguas residuales, los residuos urbanos sólo duplican su tasa actual para llegar a 2 kilos por persona. 
 		
-	]]></label>
-	
-	<label id="biocombustibles-info-level-3">
-		<![CDATA[
-					Descipción para le nivel <b>3</b> de la planca biocombustibles
+	</label><label id="biocombustibles-info-level-3">
+
+				Más de 10 millones de hectáreas, casi la mitad de la superficie agrícola actual, está sembrada de biocombustibles, y 1125 km2 de mar están sembrados de algas marinas; además, se generan 12 gW de energía con biomasa. El 25% del biogás de las aguas residuales se usa para generar energía. La generación de residuos urbanos se mantiene como ahora, en un kilo por persona, y se recicla el 60% de la basura. 
 		
-	]]></label>
-	<label id="biocombustibles-info-level-4"><![CDATA[
-		Descipción para le nivel <b>4</b> de la planca biocombustibles
-	]]></label>
-	
-	<label id="biocombustibles-description-icon">
-		<![CDATA[
+	</label><label id="biocombustibles-info-level-4">
+		
+				Hay 12 millones de hectáreas, la mitad de la superficie agrícola actual, sembradas de biocombustibles; además, se generan 16 gW de energía con biomasa y 4,700 km2 (siete veces la superficie de Cozumel) de mar están sembrados de algas. También se producen 16 gW de energía con biomasa. Cada vez se produce menos basura por persona.  
+	</label><label id="biocombustibles-description-icon">
+		
 					assets/icons/bioC.png	
-		]]></label>
-	<label id="biocombustibles-description">
-		<![CDATA[
-		Un <b>biocarburante</b> o <b>biocombustible</b> es una mezcla de <a href="/wiki/Hidrocarburo" title="Hidrocarburo">hidrocarburos</a> que se utiliza como <a href="/wiki/Combustible" title="Combustible">combustible</a> en los motores de combustión interna. Deriva de la <a href="/wiki/Biomasa" title="Biomasa">biomasa</a>, materia orgánica originada en un proceso biológico, espontáneo o provocado, utilizable como fuente de energía.</p>
-<p>Para muchos autores,<sup id="cite_ref-mapa_1-0" class="reference"><a href="#cite_note-mapa-1"><span class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup> lo correcto para referirse a este tipo de combustibles es hablar de agrocombustibles, el prefijo "bio-" se utiliza en toda la UE para referirse a los productos agrícolas en cuya producción no intervienen productos de síntesis. La palabra biocombustible, por lo tanto, se presta a confusión y dota al término de unas connotaciones positivas de las que carece.</p>
-<p>Para la obtención de los biocarburantes se pueden utilizar especies de uso agrícola tales como el <a href="/wiki/Zea_mays" title="Zea mays">maíz</a> o la <a href="/wiki/Manihot_esculenta" title="Manihot esculenta">mandioca</a>, ricas en <a href="/wiki/Carbohidrato" title="Carbohidrato" class="mw-redirect">carbohidratos</a>, o plantas <a href="/wiki/Oleaginosa" title="Oleaginosa" class="mw-redirect">oleaginosas</a> como la <a href="/wiki/Glycine_max" title="Glycine max">soja</a>, <a href="/wiki/Helianthus_annuus" title="Helianthus annuus">girasol</a> y palmas. También se pueden emplear especies forestales como el <a href="/wiki/Eucalyptus" title="Eucalyptus">eucalipto</a> y los <a href="/wiki/Pinus" title="Pinus">pinos</a>.</p>
-<p>Al utilizar estos materiales se reduce considerablemente el CO2 que es enviado a la atmósfera terrestre ya que estos materiales van absorbiendo el CO2 a medida que se van desarrollando, mientras que emiten una cantidad similar que los carburantes convencionales en el momento de la combustión.</p>
-<p>En Europa, Argentina y Estados Unidos ha surgido diversa normativa que exige a los proveedores mezclar biocombustibles hasta un nivel determinado. Generalmente los biocombustibles se mezclan con otros combustibles en cantidades que varian del 5 al 10%.</p>
-<p>Los combustibles de origen biológico pueden sustituir parte del consumo en <a href="/wiki/Combustibles_f%C3%B3siles" title="Combustibles fósiles" class="mw-redirect">combustibles fósiles</a> tradicionales, como el <a href="/wiki/Petr%C3%B3leo" title="Petróleo">petróleo</a> o el <a href="/wiki/Carb%C3%B3n" title="Carbón">carbón</a>.</p>
-<p>Los biocarburantes más usados y desarrollados son el <a href="/wiki/Bioetanol" title="Bioetanol" class="mw-redirect">bioetanol</a> y el <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>.</p>
-<ul>
-<li>El <a href="/wiki/Etanol_(combustible)#Bioetanol" title="Etanol (combustible)">bioetanol</a>, también llamado <i>etanol de biomasa</i>, por <a href="/wiki/Fermentaci%C3%B3n_alcoh%C3%B3lica" title="Fermentación alcohólica">fermentación alcohólica</a> de <a href="/wiki/Az%C3%BAcares" title="Azúcares">azúcares</a> de diversas plantas como la <a href="/wiki/Saccharum_officinarum" title="Saccharum officinarum">caña de azúcar</a>, <a href="/wiki/Beta_vulgaris_subsp._vulgaris_var._altissima" title="Beta vulgaris subsp. vulgaris var. altissima">remolacha</a> o <a href="/wiki/Cereal" title="Cereal">cereales</a> . En 2006, <a href="/wiki/Estados_Unidos" title="Estados Unidos">Estados Unidos</a> fue el principal productor de bioetanol (36% de la producción mundial), <a href="/wiki/Brasil" title="Brasil">Brasil</a> representa el 33,3%, <a href="/wiki/China" title="China" class="mw-redirect">China</a> el 7,5%, la <a href="/wiki/India" title="India">India</a> el 3,7%, <a href="/wiki/Francia" title="Francia">Francia</a> el 1,9% y <a href="/wiki/Alemania" title="Alemania">Alemania</a> el 1,5%. La producción total de 2006 alcanzó 55 mil millones de <a href="/wiki/Litros" title="Litros" class="mw-redirect">litros</a>.<sup id="cite_ref-RFA1E_2-0" class="reference"><a href="#cite_note-RFA1E-2"><span class="corchete-llamada">[</span>2<span class="corchete-llamada">]</span></a></sup></li>
-<li>El <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>, se fabrica a partir de aceites vegetales, que pueden ser ya usados o sin usar.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="corchete-llamada">[</span>3<span class="corchete-llamada">]</span></a></sup> En este último caso se suele usar <a href="/wiki/Brassica_napus" title="Brassica napus">colza</a>, <a href="/wiki/Brassica_napus" title="Brassica napus">canola</a>, <a href="/wiki/Glycine_max" title="Glycine max">soja</a> o <a href="/wiki/Jatropha_curcas" title="Jatropha curcas">jatrofa</a>, los cuales son cultivados para este propósito. El principal productor de <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a> en el mundo es <a href="/wiki/Alemania" title="Alemania">Alemania</a>, que concentra el 63% de la producción. Le sigue <a href="/wiki/Francia" title="Francia">Francia</a> con el 17%, <a href="/wiki/Estados_Unidos" title="Estados Unidos">Estados Unidos</a> con el 10%, <a href="/wiki/Italia" title="Italia">Italia</a> con el 7% y <a href="/wiki/Austria" title="Austria">Austria</a> con el 3%.</li>
-</ul>
-<p>Los biocarburantes más usados y desarrollados son el <a href="/wiki/Bioetanol" title="Bioetanol" class="mw-redirect">bioetanol</a> y el <a href="/wiki/Biodi%C3%A9sel" title="Biodiésel">biodiésel</a>.</p>
+		</label><label id="biocombustibles-description">
 
-	]]></label>
+				<p>En el sector agropecuario hay grandes oportunidades para la reducción de emisiones. Se pueden obtener combustibles más limpios que los hidrocarburos, produciendo biocombustibles o aprovechando el potencial de las algas, y se pueden reducir emisiones que se generan hoy en día por el uso de fertilizantes o por los residuos que se generan.</p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. No se usan bioenergéticos, no se aprovecha el biogás de las aguas residuales, ni se aprovechan las algas marinas. Por el lado de las emisiones, el uso de agroquímicos que emiten GEI aumenta en 0.8%, sólo se aprovecha el 20% de los residuos agroforestales y el 5% de las excretas, y los residuos urbanos se triplican hasta 3 kilos por persona. </p>
+
+				<p>2. Se aprovecha la biomasa para producir 6 gW de energía, hay 560 km2 de algas marinas sembradas para su uso (Cozumel tiene 647 km2 de superficie) y se siembran biocombustibles en 5 millones 300 mil hectáreas de tierra. Por el lado de las emisiones, el uso de agroquímicos que emiten GEI aumenta 0.6% anual, se aprovecha el 15% del biogás que generan las aguas residuales, los residuos urbanos sólo duplican su tasa actual para llegar a 2 kilos por persona, y se aprovechan 50% de los residuos agroforestales y 10% de las excretas. </p>
+
+				<p>3. Más de 10 millones de hectáreas, casi la mitad de la superficie agrícola actual, está sembrada de biocombustibles, y 1125 km2 de mar están sembrados de algas marinas; además, se generan 12 gW de energía con biomasa. Por el lado de las emisiones, no aumenta el uso de agroquímicos que producen GEI, se aprovecha la mitad de los residuos agroforestales y 20% de las excretas, y el 25% del biogás de las aguas residuales se usa para generar energía. La generación de residuos urbanos se mantiene como ahora, en un kilo por persona, y se recicla el 60% de la basura. </p>
+
+				<p>4. Hay 12 millones de hectáreas, la mitad de la superficie agrícola actual, sembradas de biocombustibles; además, se generan 16 gW de energía con biomasa y 4,700 km2 (siete veces la superficie de Cozumel) de mar están sembrados de algas. También se producen 16 gW de energía con biomasa. Cada vez se produce menos basura por persona, y se aprovechan el 70% de los residuos agroforestales y el 30% de las excretas. Además, las emisiones de fertilizantes bajan 0.4% cada año. </p>
+
+	</label><!-- 
+		*******************************************
+		Palanca 02 level info & Descripción
+		*******************************************
+		
+--><label id="eolica-label">
+	
+				Eólica
+	
+	</label><label id="eolica-info-level-1">
+				
+				Se mantiene la capacidad instalada actual, de 85 mW, y conforme las plantas en funcionamiento van degradándose, en lugar de renovarlas, se las retira.
+
+	</label><label id="eolica-info-level-2">
+				
+				Se da mantenimiento a las plantas actuales y se renuevan las que van caducando, además de que se sigue lo planeado para el sector y se instalan otros 10 gW antes de 2030. Manteniendo el ritmo, para 2050 hay una capacidad instalada de 22.5 gW.
+
+	</label><label id="eolica-info-level-3">
+
+				Se ponen todas las hélices al viento y, haciendo un enorme esfuerzo, para 2030 el país cuenta con una capacidad instalada de 30 gW, que se mantiene funcionando hasta 2050 y los años siguientes.
+	
+	</label><label id="eolica-info-level-4">
+
+				Se aprovecha todo la fuerza del viento que recorre el país y se usa todo el potencial eólico de México. Con ello, no sólo se alcanza una capacidad instalada de 30 gW para 2030, sino que ésta aumenta a 68.5 gW para 2050.
+	
+	</label><label id="eolica-description">
+
+				<p>La energía eólica ofrece un enorme potencial para generar electricidad sin contaminar el medio ambiente y sin contribuir al cambio climático. Aprovechando la fuerza del viento, sea en el mar –muchas plantas eólicas están en la parte norte del Golfo de México y frente a Baja California– o en la tierra, como en el Istmo de Tehuantepec, se puede mantener la luz prendida sin daños a la atmósfera.</p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. Se mantiene la capacidad instalada actual, de 85 mW, y conforme las plantas en funcionamiento van degradándose, en lugar de renovarlas, se las retira. </p>
+
+				<p>2. Se da mantenimiento a las plantas actuales y se renuevan las que van caducando, además de que se sigue lo planeado para el sector y se instalan otros 10 gW antes de 2030. Manteniendo el ritmo, para 2050 hay una capacidad instalada de 22.5 gW.</p>
+
+				<p>3. Se ponen todas las hélices al viento y, haciendo un enorme esfuerzo, para 2030 el país cuenta con una capacidad instalada de 30 gW, que se mantiene funcionando hasta 2050 y los años siguientes.</p>
+
+				<p>4. Se aprovecha todo la fuerza del viento que recorre el país y se usa todo el potencial eólico de México. Con ello, no sólo se alcanza una capacidad instalada de 30 gW para 2030, sino que ésta aumenta a 68.5 gW para 2050.</p>
 
 
+	</label><!-- 
+		*******************************************
+		Palanca 03 level info & Descripción
+		*******************************************
+		
+--><label id="nuclear-label">
+	
+				Nuclear
+	
+	</label><label id="nuclear-info-level-1">
+
+		Se amplía la licencia de operación de Laguna Verde, pero no se construyen más plantas nucleares en México y se mantiene la capacidad de generación en 1.4 gW.
+
+	</label><label id="nuclear-info-level-2">
+
+				De aquí al 2050 se construyen cuatro reactores nucleares nuevos de 1.4 gW cada uno, lo que supone una capacidad total de 7 gW.
+
+	</label><label id="nuclear-info-level-3">
+
+				A partir de 2030, cada dos o tres años se construye un nuevo reactor, de tal forma que para 2050 la capacidad nuclear instalada es de 14 gW.
+	
+	</label><label id="nuclear-info-level-4">
+	
+				De aquí a 2030, se construye un nuevo reactor cada dos o tres años, y después de esa fecha y hasta 2050 el ritmo de construcción se duplica. Así, se alcanza una capacidad instalada de 28 gW.
+	
+	</label><label id="nuclear-description">
+
+				<p>La energía nuclear, a pesar de ser muy polémica por la complejidad de manejar sus residuos y por los riesgos que implica, es vista por muchos como una alternativa a los combustibles fósiles, ya que no contribuye al calentamiento climático. En México hay una sola planta en funciones, en Laguna Verde, Veracruz, que aporta aproximadamente el 2.5% de la energía que consume el país.</p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. Se amplía la licencia de operación de Laguna Verde, pero no se construyen más plantas nucleares en México y se mantiene la capacidad de generación en 1.4 gW. </p>
+
+				<p>2. De aquí al 2050 se construyen cuatro reactores nucleares nuevos de 1.4 gW cada uno, lo que supone una capacidad total de 7 gW.</p>
+
+				<p>3. A partir de 2030, cada dos o tres años se construye un nuevo reactor, de tal forma que para 2050 la capacidad nuclear instalada es de 14 gW.</p>
+
+				<p>4. De aquí a 2030, se construye un nuevo reactor cada dos o tres años, y después de esa fecha y hasta 2050 el ritmo de construcción se duplica. Así, se alcanza una capacidad instalada de 28 gW. </p>
+
+	</label><!-- 
+		*******************************************
+		Palanca 04 level info & Descripción
+		*******************************************
+		
+--><label id="solar-label">
+	
+				Solar
+	
+	</label><label id="solar-info-level-1">
+
+				La energía solar sigue como hasta ahora, limitada a proyectos muy pequeños.
+
+	</label><label id="solar-info-level-2">
+
+				Se mantiene la tendencia planteada por las autoridades, que implica llegar a una capacidad instalada de 7.4 gW en 2050 en plantas generadoras, además de que 15% de los edificios nuevos de vivienda tiene paneles solares fotovoltaicos y la mitad de los nuevos hogares tienen calentadores solares.
+
+	</label><label id="solar-info-level-3">
+
+				Se aprovecha todo el potencial de energía fotovoltaica en el país, pero además se instala un gW de capacidad de energía termosolar en 2020 y ésta va creciendo hasta llegar a 7 gW en 2050. Mientras tanto, la cuarta parte de los edificios nuevos y 10% de los viejos tienen paneles solares y todos los hogares nuevos tienen calentadores termosolares. 
+	
+	</label><label id="solar-info-level-4">
+
+		 		Además de aprovechar todo el potencial de energía fotovoltaica, se generan 20 gW de energía termosolar para 2050. La mitad de la vivienda nueva y 25% de la vieja tiene paneles solares y todos los hogares nuevos dos terceras partes de los viejos tienen calentadores solares. 
+
+	</label><label id="solar-description">
+
+				<p>La energía solar ha sido vista como una alternativa limpia para los combustibles fósiles y otros tipos de energía, ya que no genera más residuos que los que se dejan al fabricar los paneles. En países con una fuerte irradiación, como México, se la considera una alternativa fuerte contra el cambio climático. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. La energía solar sigue como hasta ahora, limitada a proyectos muy pequeños.</p>
+
+				<p>2. Se mantiene la tendencia planteada por las autoridades, que implica llegar a una capacidad instalada de 7.4 gW en 2050 en plantas generadoras, además de que 15% de los edificios nuevos de vivienda tiene paneles solares fotovoltaicos y la mitad de los nuevos hogares tienen calentadores solares. </p>
+
+				<p>3. Se aprovecha todo el potencial de energía fotovoltaica en el país, pero además se instala un gW de capacidad de energía termosolar en 2020 y ésta va creciendo hasta llegar a 7 gW en 2050. Mientras tanto, la cuarta parte de los edificios nuevos y 10% de los viejos tienen paneles solares y todos los hogares nuevos tienen calentadores termosolares. </p>
+
+				<p>4. Además de aprovechar todo el potencial de energía fotovoltaica, se generan 20 gW de energía termosolar para 2050. La mitad de la vivienda nueva y 25% de la vieja tiene paneles solares y todos los hogares nuevos dos terceras partes de los viejos tienen calentadores solares. </p>
+
+	</label><!-- 
+		*******************************************
+		Palanca 05 level info & Descripción
+		*******************************************
+		
+--><label id="forestal-label">
+	
+				Bosques
+	
+	</label><label id="forestal-info-level-1">
+		
+				México sigue perdiendo 1.04% de su superficie forestal cada año, además de que no se hacen grandes esfuerzos de reforestación y apenas hay plantaciones forestales comerciales.
+
+	</label><label id="forestal-info-level-2">
+
+				Este nivel equivale a los compromisos que México ya asumió. La tasa de deforestación se reduce a la mitad (0.52% anual), y se reforestan mil km2 cada año, además de sembrarse 250 km2 de plantaciones forestales cada año.
+	
+	</label><label id="forestal-info-level-3">
+	
+				No sólo el país deja de perder bosques inmediatamente, sino que además a través de la reforestación a razón de dos mil km2 anuales, con 500 km2 plantaciones forestales cada año.
+	
+	</label><label id="forestal-info-level-4">
+	
+				 En los próximos años la reforestación se reduce en un 75% (a una tasa de 0.25%) antes de 2030 y a partir de ahí se dejan de perder bosques. Además, se reforestan tres mil km2 cada año y las plantaciones forestales aumentan en mil kilómetros cada año.
+	
+	</label><label id="forestal-description">
+	
+				<p>Cuando perdemos un bosque, cuando se degradan las plantas que lo componían, se emiten grandes cantidades de gases de efecto invernadero. Sin embargo, el fenómeno también funciona en sentido contrario: cuando se siembra un bosque nuevo, éste captura esos gases. Frenar la deforestación y restaurar los ecosistemas son por ello tareas necesarias contra el calentamiento global.</p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. México sigue perdiendo 1.04% de su superficie forestal cada año, además de que no se hacen grandes esfuerzos de reforestación y apenas hay plantaciones forestales comerciales.</p>
+
+				<p>2. Este nivel equivale a los compromisos que México ya asumió. La tasa de deforestación se reduce a la mitad (0.52% anual), y se reforestan mil km2 cada año, además de sembrarse 250 km2 de plantaciones forestales cada año.</p>
+
+				<p>3. No sólo el país deja de perder bosques inmediatamente, sino que además a través de la reforestación a razón de dos mil km2 anuales, con 500 km2 plantaciones forestales cada año. </p>
+
+				<p>4. En los próximos años la reforestación se reduce en un 75% (a una tasa de 0.25%) antes de 2030 y a partir de ahí se dejan de perder bosques. Además, se reforestan tres mil km2 cada año y las plantaciones forestales aumentan en mil kilómetros cada año. </p>
+	
+	</label><!-- 
+		*******************************************
+		Palanca 06 level info & Descripción
+		*******************************************
+		
+--><label id="hidraulica-label">
+	
+				Otras renovables
+	
+	</label><label id="hidraulica-info-level-1">
+	
+				No se utiliza la energía del mar; la aportación geotérmica se mantiene como hasta ahora, en 964 mW, y la energía que aportan las presas sigue en 11.5 gW, aunque se va deteriorando con el tiempo.
+	
+	</label><label id="hidraulica-info-level-2">
+	
+				En 2020 se empieza a aprovechar la energía de las olas con 27 plantas piloto que aportan en conjunto 80 mW. Como está planeado, la capacidad de energía geotérmica instalada aumenta en un 50%, hasta 1.6 gW. De aquí a 2050, la capacidad hidroeléctrica aumenta hasta 19.1 gW.
+	
+	</label><label id="hidraulica-info-level-3">
+	
+				La generación de energía por oleaje alcanza los 9.6 gW, pero además se introducen proyectos de energía maremotriz, que aportan 1.7 gW adicionales. Entre tanto, se aprovecha al máximo el potencial geotérmico de México, hasta alcanzar 6.8 gW de potencia de esta fuente. Se aprovecha la mitad del potencial hidroeléctrico del país, para llegar a 24.6 gW.
+	
+	</label><label id="hidraulica-info-level-4">
+	
+				Las olas aportan casi 20 gW de energía, y las mareas 13 gW, tras un enorme esfuerzo de innovación e inversión. Se invierte desde ahora en encontrar sitios con potencial geotérmico, y se aprovechan todos para generar energía. Desde las presas hidroeléctricas nos llegan casi 50 gW de energía, pues se aprovecha hasta el último río con potencial en la materia. 
+	
+	</label><label id="hidraulica-description">
+	
+				<p>No sólo el sol y el viento ofrecen fuentes limpias de energía. También se puede aprovechar el movimiento del mar, usando turbinas similares a las eólicas para aprovechar la energía de las corrientes marinas, o construyendo diques con turbinas hidráulicas para aprovechar el movimiento de las mareas, entre otras opciones. México tiene también un gran potencial para la energía geotérmica, que aprovecha la energía de géiseres y otras fuentes de calor, y la energía hidroeléctrica ha sido fundamental en el desarrollo nacional. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. No se utiliza la energía del mar; la aportación geotérmica se mantiene como hasta ahora, en 964 mW, y la energía que aportan las presas sigue en 11.5 gW, aunque se va deteriorando con el tiempo.</p>
+
+				<p>2. En 2020 se empieza a aprovechar la energía de las olas con 27 plantas piloto que aportan en conjunto 80 mW. Como está planeado, la capacidad de energía geotérmica instalada aumenta en un 50%, hasta 1.6 gW. De aquí a 2050, la capacidad hidroeléctrica aumenta hasta 19.1 gW.</p>
+
+				<p>3. La generación de energía por oleaje alcanza los 9.6 gW, pero además se introducen proyectos de energía maremotriz, que aportan 1.7 gW adicionales. Entre tanto, se aprovecha al máximo el potencial geotérmico de México, hasta alcanzar 6.8 gW de potencia de esta fuente. Se aprovecha la mitad del potencial hidroeléctrico del país, para llegar a 24.6 gW.</p>
+
+				<p>4. Las olas aportan casi 20 gW de energía, y las mareas 13 gW, tras un enorme esfuerzo de innovación e inversión. Se invierte desde ahora en encontrar sitios con potencial geotérmico, y se aprovechan todos para generar energía. Desde las presas hidroeléctricas nos llegan casi 50 gW de energía, pues se aprovecha hasta el último río con potencial en la materia. </p>
+	
+	</label><!-- 
+		*******************************************
+		Palanca 07 level info & Descripción
+		*******************************************
+		
+--><label id="ccs-label">
+	
+				Captura de carbono
+	
+	</label><label id="ccs-info-level-1">
+	
+				No se construyen plantas de captura de carbono en México.
+	
+	</label><label id="ccs-info-level-2">
+
+				Se instalan plantas con capacidad para generar 1.8 gW y tecnología para capturar el carbono que emiten.
+
+	</label><label id="ccs-info-level-3">
+
+				Las plantas de generación de energía con capacidad para capturar el carbono que emiten aportan 2.7 gW a la red.
+
+	</label><label id="ccs-info-level-4">
+
+				Hay en México plantas que generan 3.6 gW de energía y que tienen la capacidad para capturar el carbono que emiten.
+
+	</label><label id="ccs-description">
+
+				<p>Aunque apenas está en desarrollo, la tecnología de captura y almacenamiento de carbono promete ser una herramienta importante para sacar gases de efecto invernadero de la atmósfera, almacenándolos en formaciones rocosas porosas. De usarse esta herramienta, sería en elemento que acompañaría a nuevas plantas eléctricas que usaran combustibles fósiles. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. No se construyen plantas de captura de carbono en México.</p>
+
+				<p>2. Se instalan plantas con capacidad para generar 1.8 gW y tecnología para capturar el carbono que emiten.</p>
+
+				<p>3. Las plantas de generación de energía con capacidad para capturar el carbono que emiten aportan 2.7 gW a la red.</p>
+
+				<p>4. Hay en México plantas que generan 3.6 gW de energía y que tienen la capacidad para capturar el carbono que emiten. </p>
+
+
+	</label><!-- 
+		*******************************************
+		Palanca 08 level info & Descripción
+		*******************************************
+		
+--><label id="iluminacion-label">
+	
+				Energía para electrodomésticos
+	
+	</label><label id="iluminacion-info-level-1">
+	
+				El consumo de energía de los hogares para iluminación se reduce en 90% gracias al uso generalizado de tecnologías más eficientes, y en electrodomésticos baja a la mitad. En los sectores público y comercial la intensidad energética se reduce en 40%. Todo esto sería posible solamente con un enorme esfuerzo de cambio de hábitos y de sustitución de aparatos.
+	
+	</label><label id="iluminacion-info-level-2">
+	
+				La demanda energética por hogar se reduce en 20%, para llegar a mil 153 kW por hora en 2050. Por su parte, los sectores público y comercial reducen su intensidad energética en 20%
+	
+	</label><label id="iluminacion-info-level-3">
+	
+				La demanda energética por hogar se mantiene constante en iluminación, y en electrodomésticos aumenta solamente 50%, pasando de mil 423 en 2010 a mil 942 en 2050. Se hacen esfuerzos para el ahorro de energía, y la intensidad energética de los sectores público y comercial baja 10%.
+	
+	</label><label id="iluminacion-info-level-4">
+	
+				No sólo no se toman medidas en el sector público y comercial, sino que se mantiene la tendencia actual en los hogares, que compran cada vez más lámparas y electrodomésticos.
+	
+	</label><label id="iluminacion-description">
+	
+				<p>Los hogares consumen la cuarta parte de la energía del país, y en torno al 80% de su consumo se va en iluminación y en equipos domésticos. En el sector público y en el sector comercial la situación no es muy distinta, y el 70% de la energía que se consume en ellos se destinó a iluminación y equipos de cómputo. Ganar en eficiencia en el uso de la energía en el hogar y en los sectores público y comercial puede aportar mucho en la pelea contra el cambio climático.</p>
+
+				<p>Las palancas incluidas son:</p>
+ 
+				<p>1. No sólo no se toman medidas en el sector público y comercial, sino que se mantiene la tendencia actual en los hogares, que compran cada vez más lámparas y electrodomésticos.</p>
+
+				<p>2. La demanda energética por hogar se mantiene constante en iluminación, y en electrodomésticos aumenta solamente 50%, pasando de mil 423 en 2010 a mil 942 en 2050. Se hacen esfuerzos para el ahorro de energía, y la intensidad energética de los sectores público y comercial baja 10%.</p>
+
+				<p>3. La demanda energética por hogar se reduce en 20%, para llegar a mil 153 kW por hora en 2050. Por su parte, los sectores público y comercial reducen su intensidad energética en 20%.</p>
+
+				<p>4. El consumo de energía de los hogares para iluminación se reduce en 90% gracias al uso generalizado de tecnologías más eficientes, y en electrodomésticos baja a la mitad. En los sectores público y comercial la intensidad energética se reduce en 40%. Todo esto sería posible solamente con un enorme esfuerzo de cambio de hábitos y de sustitución de aparatos.</p>
+
+	</label><!-- 
+		*******************************************
+		Palanca 09 level info & Descripción
+		*******************************************
+		
+--><label id="distribucion_modal-label">
+	
+				Transporte público
+	
+	</label><label id="distribucion_modal-info-level-1">
+	
+				El avión y el autobús, dos de las formas más comunes de transporte interurbano, pero también de las menos eficientes, mantienen  su ritmo de crecimiento, de forma que 80% de los viajes entre ciudades se hace en autobús y el resto en avión. En lo que toca a la carga, el 85% se mueve por tráiler y el 15% se mueve por tren. Mientras tanto, en las ciudades, el transporte se motoriza cada vez más, hasta que el 55% de los viajes se hacen en auto o en taxi.
+	
+	</label><label id="distribucion_modal-info-level-2">
+	
+				El tren de pasajeros vive una tímida resurrección, y el 5% de los viajes interurbanos se hacen sobre rieles. Lo mismo ocurre con la carga, 25% de la cual se mueve por tren para 2050. Al interior de las ciudades, se duplica el uso del transporte público hasta que sea responsable de la cuarta parte de los traslados, y la bicicleta hace su aparición, con 1.6% de los viajes urbanos.
+	
+	</label><label id="distribucion_modal-info-level-3">
+	
+				El ferrocarril satisface del 10% de los viajes en el país, incluyendo las rutas de México a Guadalajara y en el centro del país. Más de la tercera parte de la carga se mueve también sobre rieles, y en las ciudades se ofrecen incentivos para usar el transporte público y para desplazarse a pie o en bicicleta, hasta que la tercera parte de los desplazamientos se hacen por esos medios.
+	
+	</label><label id="distribucion_modal-info-level-4">
+	
+				El ferrocarril gana peso frente a aviones y autobuses, de tal forma que 15% de los viajes interurbanos se hacen en avión, 15% en tren y el resto en autobús. Algo similar ocurre con la carga, y casi la mitad de lo que se vende y produce se transporta sobre rieles. En las ciudades, entretanto, el transporte público, pero sobre todo a pie o en bicicleta, ganan espacio frente a los medios motorizados. Así, 7.4% de los viajes en 2050 se hacen en Metro, 5.4% en Metrobús y similares, 19% en autobuses urbanos y el 5% en bicicleta.
+	
+	</label><label id="distribucion_modal-description">
+	
+				<p>Una gran oportunidad para disminuir las emisiones de gases de efecto invernadero a la atmósfera está en cambiar la forma en la que nos movemos en las ciudades y entre ciudades, y la forma en la que transportamos la carga que llena comercios, fábricas y hogares. Apostando por medios de transporte que impliquen menos viajes, con menor intensidad energética, se puede contribuir a que el cambio climático sea catastrófico.</p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. El avión y el autobús, dos de las formas más comunes de transporte interurbano, pero también de las menos eficientes, mantienen  su ritmo de crecimiento, de forma que 80% de los viajes entre ciudades se hace en autobús y el resto en avión. En lo que toca a la carga, el 85% se mueve por tráiler y el 15% se mueve por tren. Mientras tanto, en las ciudades, el transporte se motoriza cada vez más, hasta que el 55% de los viajes se hacen en auto o en taxi.</p>
+
+				<p>2. El tren de pasajeros vive una tímida resurrección, y el 5% de los viajes interurbanos se hacen sobre rieles. Lo mismo ocurre con la carga, 25% de la cual se mueve por tren para 2050. Al interior de las ciudades, se duplica el uso del transporte público hasta que sea responsable de la cuarta parte de los traslados, y la bicicleta hace su aparición, con 1.6% de los viajes urbanos.</p>
+
+				<p>3. El ferrocarril es responsable del 10% de los viajes en el país, incluyendo las rutas de México a Guadalajara y en el centro del país. Más de la tercera parte de la carga se mueve también sobre rieles, y en las ciudades se ofrecen incentivos para usar el transporte público y para desplazarse a pie o en bicicleta, hasta que la tercera parte de los desplazamientos se hacen por esos medios.</p>
+
+				<p>4. El ferrocarril gana peso frente a aviones y autobuses, de tal forma que 15% de los viajes interurbanos se hacen en avión, 15% en tren y el resto en autobús. Algo similar ocurre con la carga, y casi la mitad de lo que se vende y produce se transporta sobre rieles. En las ciudades, entretanto, el transporte público, pero sobre todo a pie o en bicicleta, ganan espacio frente a los medios motorizados. Así, 7.4% de los viajes en 2050 se hacen en Metro, 5.4% en Metrobús y similares, 19% en autobuses urbanos y el 5% en bicicleta.</p>
+
+	
+	</label><!-- 
+		*******************************************
+		Palanca 10 level info & Descripción
+		*******************************************
+		
+--><label id="demanda_transporte-label">
+	
+				Ordenamiento urbano
+	
+	</label><label id="demanda_transporte-info-level-1">
 	
 
-	<!-- 
+				A través de incentivos y políticas de redensificación y control de las manchas urbanas, se logra que la distancia recorrida per capita apenas aumente 11.4% entre el día de hoy y el 2050.
+	
+	</label><label id="demanda_transporte-info-level-2">
+
+				Como no solamente se controla la expansión de las manchas urbanas, sino que se impulsa la densificación de las áreas centrales, se reduce a 25% el crecimiento de la distancia recorrida per capita.
+		
+	</label><label id="demanda_transporte-info-level-3">
+	
+				Al controlar la expansión horizontal de las ciudades, se reduce en una cuarta parte la distancia media, por lo que la distancia recorrida crece solamente 42%. 
+	
+	</label><label id="demanda_transporte-info-level-4">
+	
+				La distancia recorrida per capita aumenta en 55% antes de 2050, de forma que se recorren 12 mil 600 kilómetros anuales.
+
+	</label><label id="demanda_transporte-description">
+	
+				<p>Para evitar que el cambio climático sea catastrófico no basta con cambiar la forma en la que nos desplazamos: hay que desplazarnos menos. Si cambia la configuración de las ciudades para hacerlas más compactas y si hay menos gente que necesite moverse, entonces se demandará menos transporte y hará falta menos energía para mantenerlo. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. La distancia recorrida per capita aumenta en 55% antes de 2050, de forma que se recorren 12 mil 600 kilómetros anuales.</p>
+
+				<p>2. Al controlar la expansión horizontal de las ciudades, se reduce en una cuarta parte la distancia media, por lo que la distancia recorrida crece solamente 42%. </p>
+
+				<p>3. Como no solamente se controla la expansión de las manchas urbanas, sino que se impulsa la densificación de las áreas centrales, se reduce a 25% el crecimiento de la distancia recorrida per capita. </p>
+
+				<p>4. A través de incentivos y políticas de redensificación y control de las manchas urbanas, se logra que la distancia recorrida per capita apenas aumente 11.4% entre el día de hoy y el 2050. </p>
+	
+	</label><!-- 
 		*******************************************
-		Palanca 01 level info & Descripción
+		Palanca 11 level info & Descripción
 		*******************************************
-		-->
-	<label id="eolica-label"><![CDATA[
-				Energía eólica
-	]]></label>
-	<label id="eolica-info-level-2"><![CDATA[
-				eolica-info-level-2
-	]]></label>
-	<label id="eolica-info-level-3"><![CDATA[
-				eolica-info-level-3
-	]]></label>
-	<label id="eolica-info-level-4"><![CDATA[
-				eolica-info-level-4
-	]]></label>
-	<label id="eolica-info-level-1"><![CDATA[
-				eolica-info-level-1
-	]]></label>
-	<label id="eolica-description"><![CDATA[
-				eolica-description
-	]]></label>
+		
+--><label id="escenarios_tec-label">
 	
+			 	Vehículos limpios
+
+	</label><label id="escenarios_tec-info-level-1">
 	
+				Se mantiene la composición actual de la flota de autobuses, con 60% de categoría económica, que es muy ineficiente. La flota vehicular del país crece casi 4% al año y tiene una edad promedio de vida de 35 años. Además, hay una paulatina introducción de vehículos con motores de combustión interna de alta eficiencia. 
 	
-	<!-- 
+	</label><label id="escenarios_tec-info-level-2">
+	
+				Se renueva el 8% de los autobuses del país y, a través de mejoras logísticas, disminuyen los viajes en vacío del autotransporte de carga. En lo que toca a los autos, la mitad tienen motores de combustión interna de alta eficiencia y hacen su aparición los vehículos eléctricos e híbridos.
+	
+	</label><label id="escenarios_tec-info-level-3">
+	
+				Se renueva el 12% de los autobuses del país y las mejoras logísticas, aunadas a una normativa que impulsa la eficiencia de autos nuevos lleva a un aumento de casi 35% en la eficiencia global de la flota. Además, el 30% de los vehículos son híbridos y el 10% son eléctricos, mientras que ya un 40% son de combustión interna de alta eficiencia.
+	
+	</label><label id="escenarios_tec-info-level-4">
+	
+				Se renueva el 16% de los autobuses y, además de mejoras logísticas y políticas para incentivar eficiencia de autos nuevos, hay programas de conducción más efectiva que llevan a que la eficiencia aumente en casi 50%. Entre los autos, la mitad son híbridos y el 20% son eléctricos, además de que los que quedan de combustión interna son de alta eficiencia.
+	
+	</label><label id="escenarios_tec-description">
+	
+				<p>Para evitar el cambio climático es necesario usar menos energía, que contamine menos y de la forma más eficiente posible. El transporte no es la excepción, y el uso más eficiente de los fletes, así como la introducción de mejores motores permitirá evitar que las emisiones de gases de efecto invernadero agraven la situación. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. Se mantiene la composición actual de la flota de autobuses, con 60% de categoría económica, que es muy ineficiente. La flota vehicular del país crece casi 4% al año y tiene una edad promedio de vida de 35 años. Además, hay una paulatina introducción de vehículos con motores de combustión interna de alta eficiencia. </p>
+
+				<p>2. Se renueva el 8% de los autobuses del país y, a través de mejoras logísticas, disminuyen los viajes en vacío del autotransporte de carga. En lo que toca a los autos, la mitad tienen motores de combustión interna de alta eficiencia y hacen su aparición los vehículos eléctricos e híbridos. </p>
+
+				<p>3. Se renueva el 12% de los autobuses del país y las mejoras logísticas, aunadas a una normativa que impulsa la eficiencia de autos nuevos lleva a un aumento de casi 35% en la eficiencia global de la flota. Además, el 30% de los vehículos son híbridos y el 10% son eléctricos, mientras que ya un 40% son de combustión interna de alta eficiencia.</p>
+
+				<p>4. Se renueva el 16% de los autobuses y, además de mejoras logísticas y políticas para incentivar eficiencia de autos nuevos, hay programas de conducción más efectiva que llevan a que la eficiencia aumente en casi 50%. Entre los autos, la mitad son híbridos y el 20% son eléctricos, además de que los que quedan de combustión interna son de alta eficiencia. </p>
+	
+	</label><!-- 
 		*******************************************
-		Palanca 01 level info & Descripción
+		Palanca 12 level info & Descripción
 		*******************************************
-		-->
+		
+--><label id="climatizacion-label">
 	
+				Climatización eficiente
 	
+	</label><label id="climatizacion-info-level-1">
 	
+				La energía para cocinar se mantiene como ahora: 81% de gas y 18% de leña, y la leña que se usa se quema en estufas poco eficientes y viene de fuentes no sustentables. Además, en hogares y comercios se siguen usando calentadores de gas y aires acondicionados tradicionales, en lugar de los más eficientes, y los espacios están térmicamente mal aislados.
 	
+	</label><label id="climatizacion-info-level-2">
 	
+				La proporción de estufas de gas para cocinar aumenta al 90% y del 10% de leña restante, la mitad se quema en hogares con fogones eficientes. El 10% de las superficies comerciales introducen equipos de aire acondicionado más eficientes y enfriadores solares. Las viviendas adoptan nuevas tecnologías para calefacción y enfriamiento, como bombas de calor o calentadores solares. Un mejor aislamiento térmico reduce la transferencia de calor en 42%.
 	
+	</label><label id="climatizacion-info-level-3">
 	
+				La cuarta parte de las estufas son eléctricas, y el 10% de fogones de leña que siguen usándose son todos muy eficientes, además de que dos terceras partes de la leña que usan son sustentables. Al 2050 el 25% de los aires acondicionados son eficientes, igual que los calentadores eléctricos. La cuarta parte de los hogares tiene calentadores eléctricos y usa aires acondicionados eficientes, además de que las medidas de aislamiento redujeron la transferencia de calor en 63%.
 	
+	</label><label id="climatizacion-info-level-4">
 	
-	<label id="nuclear-label"><![CDATA[
-				Energía nuclear
-	]]></label>
-	<label id="nuclear-info-level-2"><![CDATA[
-				nuclear-info-level-2
-	]]></label>
-	<label id="nuclear-info-level-3"><![CDATA[
-				nuclear-info-level-3
-	]]></label>
-	<label id="nuclear-info-level-4"><![CDATA[
-				nuclear-info-level-4
-	]]></label>
-	<label id="nuclear-info-level-1"><![CDATA[
-				nuclear-info-level-1
-	]]></label>
-	<label id="nuclear-description"><![CDATA[
-				nuclear-description
-	]]></label>
+				Casi la mitad de las estufas son eléctricas, y 48% de las mismas son de gas. La leña sólo se usa en 4% de los hogares, y todos ellos usan fogones eficientes y leña sustentable. El 50 por ciento de los comercios tiene aires acondicionados eficientes y el 20% tiene enfriadores solares. Además, el uso de calentadores eléctricos llegó a 40% en 2050 y, en general, también los hogares han adoptado en gran proporción tecnologías eficientes de climatización y un mejor aislamiento reduce la transferencia de calor en 85%. 
 	
+	</label><label id="climatizacion-description">
 	
+				<p>Gran parte de la energía que entra en los hogares se pierde por problemas de aislamiento, de eficiencia en la cocina o en los sistemas de calefacción o aire acondicionado. Además, la leña que se usa se puede usar mal o venir de fuentes que no son sustentables, lo que aumenta la contribución de los hogares al cambio climático. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. La energía para cocinar se mantiene como ahora: 81% de gas y 18% de leña, y la leña que se usa se quema en estufas poco eficientes y viene de fuentes no sustentables. Además, en hogares y comercios se siguen usando calentadores de gas y aires acondicionados tradicionales, en lugar de los más eficientes, y los espacios están térmicamente mal aislados.</p>
+
+				<p>2. La proporción de estufas de gas para cocinar aumenta al 90% y del 10% de leña restante, la mitad se quema en hogares con fogones eficientes. El 10% de las superficies comerciales introducen equipos de aire acondicionado más eficientes y enfriadores solares. Las viviendas adoptan nuevas tecnologías para calefacción y enfriamiento, como bombas de calor o calentadores solares. Un mejor aislamiento térmico reduce la transferencia de calor en 42%.</p>
+
+				<p>3. La cuarta parte de las estufas son eléctricas, y el 10% de fogones de leña que siguen usándose son todos muy eficientes, además de que dos terceras partes de la leña que usan son sustentables. Al 2050 el 25% de los aires acondicionados son eficientes, igual que los calentadores eléctricos. La cuarta parte de los hogares tiene calentadores eléctricos y usa aires acondicionados eficientes, además de que las medidas de aislamiento redujeron la transferencia de calor en 63%. </p>
+
+				<p>4. Casi la mitad de las estufas son eléctricas, y 48% de las mismas son de gas. La leña sólo se usa en 4% de los hogares, y todos ellos usan fogones eficientes y leña sustentable. El 50 por ciento de los comercios tiene aires acondicionados eficientes y el 20% tiene enfriadores solares. Además, el uso de calentadores eléctricos llegó a 40% en 2050 y, en general, también los hogares han adoptado en gran proporción tecnologías eficientes de climatización y un mejor aislamiento reduce la transferencia de calor en 85%. </p>
 	
-	
-	
-	
-	
-	
-	<!-- 
+	</label><!-- 
 		*******************************************
-		Palanca 01 level info & Descripción
+		Palanca 13 level info & Descripción
 		*******************************************
-		-->
+		
+--><label id="eficiencia_ind-label">
 	
+				Eficiencia industrial
 	
+	</label><label id="eficiencia_ind-info-level-1">
 	
+				Se mantiene constante la intensidad energética, con lo que cada nueva planta demanda más energía, y esa energía viene en un 68% de combustibles fósiles, como hasta ahora. No hay tecnología de captura y almacenamiento de carbono.
 	
+	</label><label id="eficiencia_ind-info-level-2">
 	
-	<label id="solar-label"><![CDATA[
-		Energía Solar
-	]]></label>
-	<label id="solar-info-level-2"><![CDATA[
-		solar-info-level-2
-	]]></label>
-	<label id="solar-info-level-3"><![CDATA[
-		solar-info-level-3
-	]]></label>
-	<label id="solar-info-level-4"><![CDATA[
-		solar-info-level-4
-	]]></label>
-	<label id="solar-info-level-1"><![CDATA[
-		solar-info-level-1
-	]]></label>
-	<label id="solar-description"><![CDATA[
-		Incluyen pequeña y gran escala, tanto fotovoltáica como termosolar
-	]]></label>
+				La intensidad energética se reduce en un 1% anual, al tiempo que la proporción de combustibles fósiles en la mezcla energética se reduce al 59%. Con ello, las emisiones disminuyen 0.4% anual, y además, para 2050 se logró instalar tecnología que captura 2% de las emisiones restantes.
 	
+	</label><label id="eficiencia_ind-info-level-3">
 	
+				La intensidad energética se reduce en 1.2% anual, y la proporción de combustibles fósiles usada baja a 54%. Con ello, las emisiones por procesos industriales disminuyen 0.7% anual. La tecnología de captura y almacenamiento de carbono, además, evita que 5% de las emisiones lleguen a la atmósfera.
 	
+	</label><label id="eficiencia_ind-info-level-4">
 	
+				La intensidad energética del sector se reduce en 1.7% anual, y para 2050 los combustibles fósiles constituyen únicamente 50% de la mezcla energética. Con ello, las emisiones por procesos industriales disminuyen 1% cada año. Para 2050, la tecnología instalada logra capturar el 10% de las emisiones por procesos industriales. 
 	
+	</label><label id="eficiencia_ind-description">
 	
-	<!-- 
+				<p>En el sector industrial se puede contribuir a mitigar el cambio climático por dos vías. Por un lado, se puede lograr que se emitan menos gases de efecto invernadero cambiando las fuentes de energía usadas y reduciendo su intensidad energética. Por el otro, se pueden capturar los gases de efecto invernadero emitidos y almacenarlos en rocas porosas. </p>
+
+				<p>Las palancas incluidas son:</p>
+
+				<p>1. Se mantiene constante la intensidad energética, con lo que cada nueva planta demanda más energía, y esa energía viene en un 68% de combustibles fósiles, como hasta ahora. No hay tecnología de captura y almacenamiento de carbono. </p>
+
+				<p>2. La intensidad energética se reduce en un 1% anual, al tiempo que la proporción de combustibles fósiles en la mezcla energética se reduce al 59%. Con ello, las emisiones disminuyen 0.4% anual, y además, para 2050 se logró instalar tecnología que captura 2% de las emisiones restantes. </p>
+
+				<p>3. La intensidad energética se reduce en 1.2% anual, y la proporción de combustibles fósiles usada baja a 54%. Con ello, las emisiones por procesos industriales disminuyen 0.7% anual. La tecnología de captura y almacenamiento de carbono, además, evita que 5% de las emisiones lleguen a la atmósfera.</p>
+
+				<p>4. La intensidad energética del sector se reduce en 1.7% anual, y para 2050 los combustibles fósiles constituyen únicamente 50% de la mezcla energética. Con ello, las emisiones por procesos industriales disminuyen 1% cada año. Para 2050, la tecnología instalada logra capturar el 10% de las emisiones por procesos industriales.  </p>
+	
+	</label><!-- 
 		*******************************************
-		Palanca 01 level info & Descripción
+		Palanca 14 level info & Descripción
 		*******************************************
-		-->
+		
+--><label id="petrolera-label">
 	
+				Energía fósil
 	
+	</label><label id="petrolera-info-level-1">
 	
+				Los precios del petróleo son bajos y la producción alcanza los 2.4 MBD en 2050, al tiempo que la producción de gas natural se mantiene constante en 1.6 trillones de pies cúbicos. Esto lleva a la paulatina descarbonización de la economía.
 	
+	</label><label id="petrolera-info-level-2">
 	
-	<label id="forestal-label"><![CDATA[
-		Evitar deforestación y reforestación
-	]]></label>
-	<label id="forestal-info-level-2"><![CDATA[
-		forestal-info-level-2
-	]]></label>
-	<label id="forestal-info-level-3"><![CDATA[
-		forestal-info-level-3
-	]]></label>
-	<label id="forestal-info-level-4"><![CDATA[
-		forestal-info-level-4
-	]]></label>
-	<label id="forestal-info-level-1"><![CDATA[
-		forestal-info-level-1
-	]]></label>
-	<label id="forestal-description"><![CDATA[
-		Incluye deforestación evitada, plantaciones y manejo forestal
-	]]></label>
+				Los precios del petróleo son intermedios y en 2050 se alcanza una producción de 3.4 MBD, al tiempo que la oferta de gas natural crece solamente 1.44% anual, hasta llegar a 2.3 trillones de pies cúbicos.
 	
+	</label><label id="petrolera-info-level-3">
+
+				Siguiendo el escenario de referencia internacional, los precios del petróleo son altos y la producción de petróleo alcanza 4.3 MBD en 2050. La oferta de gas, por otra parte, crece solamente 3.44% anual, hasta llegar a los 3.8 trillones de pies cúbicos.
 	
+	</label><label id="petrolera-info-level-4">
 	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
+				Los precios del petróleo en el mercado internacional son altos, y la reforma energética de México ha abierto el campo para nuevos jugadores con nuevas capacidades extractivas. La producción pasa de 3 a 4.8 MBD. La producción de gas, mientras tanto, crece un 4.10% anual a partir de 2020 y su oferta se triplica y un poco más, hasta llegar a los 5.3 trillones de pies cúbicos
+
+	</label><label id="petrolera-description">
 	
-	
-	
-	<label id="hidraulica-label"><![CDATA[
-		Otras renovables
-	]]></label>
-	<label id="hidraulica-info-level-2"><![CDATA[
-		hidraulica-info-level-2
-	]]></label>
-	<label id="hidraulica-info-level-3"><![CDATA[
-		hidraulica-info-level-3
-	]]></label>
-	<label id="hidraulica-info-level-4"><![CDATA[
-		hidraulica-info-level-4
-	]]></label>
-	<label id="hidraulica-info-level-1"><![CDATA[
-		hidraulica-info-level-1
-	]]></label>
-	<label id="hidraulica-description"><![CDATA[
-		Incluye hidráulica, oceánica y geotérmica
-	]]></label>
-	
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	
-	<label id="ccs-label"><![CDATA[
-		Captura de carbono
-	]]></label>
-	<label id="ccs-info-level-2"><![CDATA[
-		ccs-info-level-2
-	]]></label>
-	<label id="ccs-info-level-3"><![CDATA[
-		ccs-info-level-3
-	]]></label>
-	<label id="ccs-info-level-4"><![CDATA[
-		ccs-info-level-4
-	]]></label>
-	<label id="ccs-info-level-1"><![CDATA[
-		ccs-info-level-1
-	]]></label>
-	<label id="ccs-description"><![CDATA[
-		ccs-description
-	]]></label>
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	
-	<label id="iluminacion-label"><![CDATA[
-		Uso de electrodomésticos
-	]]></label>
-	<label id="iluminacion-info-level-2"><![CDATA[
-		iluminacion-info-level-2
-	]]></label>
-	<label id="iluminacion-info-level-3"><![CDATA[
-		iluminacion-info-level-3
-	]]></label>
-	<label id="iluminacion-info-level-4"><![CDATA[
-		iluminacion-info-level-4
-	]]></label>
-	<label id="iluminacion-info-level-1"><![CDATA[
-		iluminacion-info-level-1
-	]]></label>
-	<label id="iluminacion-description"><![CDATA[
-		Incluye iluminación, electrodomésticos y cocción tanto residencial como comercial y público.
-	]]></label>
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	
-	<label id="distribucion_modal-label"><![CDATA[
-		Modos de transporte
-	]]></label>
-	<label id="distribucion_modal-info-level-2"><![CDATA[
-		distribucion_modal-info-level-2
-	]]></label>
-	<label id="distribucion_modal-info-level-3"><![CDATA[
-		distribucion_modal-info-level-3
-	]]></label>
-	<label id="distribucion_modal-info-level-4"><![CDATA[
-		distribucion_modal-info-level-4
-	]]></label>
-	<label id="distribucion_modal-info-level-1"><![CDATA[
-		distribucion_modal-info-level-1
-	]]></label>
-	<label id="distribucion_modal-description"><![CDATA[
-		distribucion_modal-description
-	]]></label>
+				<p>Para mitigar el cambio climático no solo será necesario que haya otras alternativas energéticas frente a los combustibles fósiles. También será necesario que el petróleo y el gas se queden bajo tierra, si queremos mantener el cambio climático por debajo de niveles desastrosos. Por eso es importante tomar en cuenta qué pasará con la oferta y los precios de los hidrocarburos.</p>
+
+				<p>Las palancas incluidas son:</p>
 
 	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	
-	<label id="demanda_transporte-label"><![CDATA[
-		Demanda de transporte
-	]]></label>
-	<label id="demanda_transporte-info-level-2"><![CDATA[
-		demanda_transporte-info-level-2
-	]]></label>
-	<label id="demanda_transporte-info-level-3"><![CDATA[
-		demanda_transporte-info-level-3
-	]]></label>
-	<label id="demanda_transporte-info-level-4"><![CDATA[
-		demanda_transporte-info-level-4
-	]]></label>
-	<label id="demanda_transporte-info-level-1"><![CDATA[
-		demanda_transporte-info-level-1
-	]]></label>
-	<label id="demanda_transporte-description"><![CDATA[
-		demanda_transporte-description
-	]]></label>
+				<p>1. Los precios del petróleo en el mercado internacional son altos, y la reforma energética de México ha abierto el campo para nuevos jugadores con nuevas capacidades extractivas. La producción pasa de 3 a 4.8 MBD. La producción de gas, mientras tanto, crece un 4.10% anual a partir de 2020 y su oferta se triplica y un poco más, hasta llegar a los 5.3 trillones de pies cúbicos.</p>
 
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	
-	<label id="escenarios_tec-label"><![CDATA[
-		Eficiencia del transporte
-	]]></label>
-	<label id="escenarios_tec-info-level-2"><![CDATA[
-		escenarios_tec-info-level-2
-	]]></label>
-	<label id="escenarios_tec-info-level-3"><![CDATA[
-		escenarios_tec-info-level-3
-	]]></label>
-	<label id="escenarios_tec-info-level-4"><![CDATA[
-		escenarios_tec-info-level-4
-	]]></label>
-	<label id="escenarios_tec-info-level-1"><![CDATA[
-		escenarios_tec-info-level-1
-	]]></label>
-	<label id="escenarios_tec-description"><![CDATA[
-		escenarios_tec-description
-	]]></label>
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	
-	<label id="climatizacion-label"><![CDATA[
-		Climatización
-	]]></label>
-	<label id="climatizacion-info-level-2"><![CDATA[
-		climatizacion-info-level-2
-	]]></label>
-	<label id="climatizacion-info-level-3"><![CDATA[
-		climatizacion-info-level-3
-	]]></label>
-	<label id="climatizacion-info-level-4"><![CDATA[
-		climatizacion-info-level-4
-	]]></label>
-	<label id="climatizacion-info-level-1"><![CDATA[
-		climatizacion-info-level-1
-	]]></label>
-	<label id="climatizacion-description"><![CDATA[
-		climatizacion-description
-	]]></label>
-	
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	<label id="eficiencia_ind-label"><![CDATA[
-		Eficiencia en la industria
-	]]></label>
-	<label id="eficiencia_ind-info-level-2"><![CDATA[
-		eficiencia_ind-info-level-2
-	]]></label>
-	<label id="eficiencia_ind-info-level-3"><![CDATA[
-		eficiencia_ind-info-level-3
-	]]></label>
-	<label id="eficiencia_ind-info-level-4"><![CDATA[
-		eficiencia_ind-info-level-4
-	]]></label>
-	<label id="eficiencia_ind-info-level-1"><![CDATA[
-		eficiencia_ind-info-level-1
-	]]></label>
-	<label id="eficiencia_ind-description"><![CDATA[
-		eficiencia_ind-description
-	]]></label>
-	
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
-	<label id="petrolera-label"><![CDATA[
-		Producción fósil
-	]]></label>
-	<label id="petrolera-info-level-2"><![CDATA[
-		petrolera-info-level-2
-	]]></label>
-	<label id="petrolera-info-level-3"><![CDATA[
-		petrolera-info-level-3
-	]]></label>
-	<label id="petrolera-info-level-4"><![CDATA[
-		petrolera-info-level-4
-	]]></label>
-	<label id="petrolera-info-level-1"><![CDATA[
-		petrolera-info-level-1
-	]]></label>
-	<label id="petrolera-description"><![CDATA[
-		petrolera-description
-	]]></label>
-	
-	<!-- 
-		*******************************************
-		Palanca 01 level info & Descripción
-		*******************************************
-		-->
+				<p>2. Siguiendo el escenario de referencia internacional, los precios del petróleo son altos y la producción de petróleo alcanza 4.3 MBD en 2050. La oferta de gas, por otra parte, crece solamente 3.44% anual, hasta llegar a los 3.8 trillones de pies cúbicos.</p>
 
-	<label id="SUPPLY FROM CFG"><![CDATA[
+				<p>3. Los precios del petróleo son intermedios y en 2050 se alcanza una producción de 3.4 MBD, al tiempo que la oferta de gas natural crece solamente 1.44% anual, hasta llegar a 2.3 trillones de pies cúbicos.</p>
+
+				<p>4. Los precios del petróleo son bajos y la producción alcanza los 2.4 MBD en 2050, al tiempo que la producción de gas natural se mantiene constante en 1.6 trillones de pies cúbicos. Esto lleva a la paulatina descarbonización de la economía.</p>
+
+	</label><!-- 
+		*******************************************
+		
+		*******************************************
+		
+--><label id="SUPPLY FROM CFG">
 				Oferta
-	]]></label>
-	<label id="DEMAND LABEL"><![CDATA[
+	</label><label id="DEMAND LABEL">
 				Demanda
-	]]></label>
-</labels>
+	</label></labels>

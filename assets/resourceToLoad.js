@@ -148,7 +148,7 @@ var assetsManifest = [
 	{src:"assets/animations/spritesheets/demanda_transporte/demanda_transporte_2b_n2.json", id:"sprite_json_demanda_transporte_2b_n2"},
 	{src:"assets/animations/spritesheets/demanda_transporte/demanda_transporte_2b_n3.json", id:"sprite_json_demanda_transporte_2b_n3"},
 	{src:"assets/animations/spritesheets/demanda_transporte/demanda_transporte_2b_n4.json", id:"sprite_json_demanda_transporte_2b_n4"},
-	
+/*	
 	{src:"assets/animations/spritesheets/distribucion_modal/distribucion_modal_0_n1.json", id:"sprite_json_distribucion_modal_0_n1"},
 	{src:"assets/animations/images/animated/distribucion_modal/distribucion_modal_0_n1_0.png", id:"distribucion_modal_0_n1_0"},
 	{src:"assets/animations/images/animated/distribucion_modal/distribucion_modal_0_n1_1.png", id:"distribucion_modal_0_n1_1"},
@@ -164,7 +164,7 @@ var assetsManifest = [
 	
 	{src:"assets/animations/spritesheets/distribucion_modal/distribucion_modal_0_n4.json", id:"sprite_json_distribucion_modal_0_n4"},
 	{src:"assets/animations/images/animated/distribucion_modal/distribucion_modal_0_n4_0.png", id:"distribucion_modal_0_n4_0"},
-	
+	*/
 	{src:"assets/animations/spritesheets/distribucion_modal/distribucion_modal_1_n1.json", id:"sprite_json_distribucion_modal_1_n1"},
 	{src:"assets/animations/images/animated/distribucion_modal/distribucion_modal_1_n1_0.png",  id:"distribucion_modal_1_n1_0"},
 	{src:"assets/animations/images/animated/distribucion_modal/distribucion_modal_1_n1_1.png",  id:"distribucion_modal_1_n1_1"},
